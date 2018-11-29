@@ -1,13 +1,7 @@
 package ;
 import js.html.Element;
-@:enum abstract Direction(String) from String to String{
-    var top = 'top';
-    var right = 'right';
-    var bottom = 'bottom';
-    var left = 'left';
-}
 typedef Options = {
-?direction:Direction,
+?direction:Bool,
 ?hoverEnabled:Bool,
 ?toolBarEnabled:Bool
 }

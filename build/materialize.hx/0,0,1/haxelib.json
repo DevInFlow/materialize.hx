@@ -1,0 +1,19 @@
+{
+  "name": "materialize.hx",
+  "url": "https://github.com/DevInFlow/materialize.hx",
+  "license": "MIT",
+  "tags": [
+    "js",
+    "materialize"
+  ],
+  "description": "Haxe externs for Materialize Design javascript framework",
+  "version": "0.0.1",
+  "classPath": "src/",
+  "releasenote": "",
+  "contributors": [
+    "varadig"
+  ],
+  "dependencies": {
+    "nouislider.hx":""
+  }
+}

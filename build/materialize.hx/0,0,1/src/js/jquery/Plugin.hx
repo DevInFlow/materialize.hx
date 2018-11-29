@@ -45,7 +45,4 @@ extern class Plugin {
     static inline function formSelect( j:js.jquery.JQuery, ?arg:FormSelect.FormSelectOptions ):Dynamic {
         return untyped j.formSelect(arg);
     }
-    static inline function floatingActionButton( j:js.jquery.JQuery, ?arg:FormSelect.FormSelectOptions ):Dynamic {
-        return untyped j.floatingActionButton(arg);
-    }
 }

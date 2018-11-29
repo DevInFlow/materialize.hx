@@ -1,0 +1,28 @@
+<project basedir="." default="neko">
+	<property file="build.properties"/>
+	<target name="buildHaxelib">
+		<delete dir="build"/>
+		<mkdir dir="build/"/>
+		<mkdir dir="build/${projectName}"/>
+		<mkdir dir="build/${projectName}/${versionDir}"/>
+		
+		<copy todir="build/${projectName}/${versionDir}/src">
+			<fileset dir="src"/>
+		</copy>
+		
+		<copy file="haxelib.json" tofile="build/${projectName}/${versionDir}/haxelib.json"/>
+		<echo file="build/${projectName}/.current" >${version}</echo>
+		
+		<zip destfile="build/${projectName}.zip" basedir="build/${projectName}" />
+	</target>
+		
+	<target name="build">
+		<exec dir="." failonerror="false" executable="haxelib">
+			<arg line="remove ${projectName}" />
+		</exec>
+		<antcall target="buildHaxelib" />
+		<!--<exec dir="." failonerror="true" executable="haxelib">-->
+			<!--<arg line="install build/${projectName}.zip" />-->
+		<!--</exec>-->
+	</target>
+</project>

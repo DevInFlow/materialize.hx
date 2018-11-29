@@ -2,53 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="433550bf-dfb0-4275-a5e6-e3c84e916739" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.hxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/.current" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/haxelib.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Autocomplete.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Buttons.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Carousel.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/CharacterCounter.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Chips.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Collapsible.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Component.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Datepicker.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Dropdown.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/FormSelect.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/M.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Materialbox.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Modal.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Parallax.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Pushpin.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/ScrollSpy.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Sidenav.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Slider.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Tabs.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Test.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Timepicker.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Toast.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Tooltip.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/js/jquery/Plugin.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/haxelib.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Components.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Containers.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Css.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Forms.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Test.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/base/BaseTest.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/collection/CollectionTest.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/test.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Haxerialize.iml" afterPath="$PROJECT_DIR$/materialize.hx.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Buttons.hx" afterPath="$PROJECT_DIR$/src/Buttons.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/jquery/Plugin.hx" afterPath="$PROJECT_DIR$/src/js/jquery/Plugin.hx" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -333,46 +287,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="materialize.hx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="materialize.hx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test.hx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="materialize.hx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="materialize.hx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -847,7 +761,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56157000" />
+    <option name="totallyTimeSpent" value="56312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
@@ -937,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,9 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="80" lean-forward="false" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
-          <folding>
-            <element signature="e#10#33#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1014,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
           <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,7 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,18 +957,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Floating.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Floating.hx" />
     <entry file="file://$PROJECT_DIR$/src/js/jquery/Plugin.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
@@ -1071,27 +969,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/materialize.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20893">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/materialize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37462">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/materialize.min.css" />
+    <entry file="file://$PROJECT_DIR$/www/css/materialize.css" />
     <entry file="file:///usr/local/lib/haxe/std/js/html/DOMElement.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1099,63 +982,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="772" column="4" lean-forward="false" selection-start-line="772" selection-start-column="4" selection-end-line="772" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Breadcrumb.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Buttons.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Cards.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Collections.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/events/Event.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Icon.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Breadcrumb.hx" />
+    <entry file="file://$PROJECT_DIR$/src/components/Buttons.hx" />
+    <entry file="file://$PROJECT_DIR$/src/components/Cards.hx" />
+    <entry file="file://$PROJECT_DIR$/src/components/Collections.hx" />
+    <entry file="file://$PROJECT_DIR$/src/components/events/Event.hx" />
+    <entry file="file://$PROJECT_DIR$/src/components/Icon.hx" />
     <entry file="file:///usr/local/lib/haxe/std/js/html/InputElement.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1167,14 +1006,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestinputE.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestinputE.hx" />
     <entry file="file://$PROJECT_DIR$/src/model/Containers.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1203,14 +1035,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Collections.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Collections.hx" />
     <entry file="file://$PROJECT_DIR$/src/model/Forms.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">

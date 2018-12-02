@@ -1,15 +1,12 @@
 package model;
 @:enum abstract Componenets(String) from String to String{
+    var section = 'section';
+    var scrollspy = 'scrollspy';
     var activator = 'activator';
     var avatar = 'avatar';
     var badge = 'badge';
-    var btn = 'btn';
-    var btnFlat = 'btn-flat';
-    var btnFloating = 'btn-floating';
-    var btnLarge = 'btn-large';
     var breadcrumb = 'breadcrumb';
     var brandLogo = 'brand-logo';
-    var btnSmall = 'btn-small';
     var dropdownContent = 'dropdown-content';
     var dropdownTrigger = 'dropdown-trigger';
     var disabled = 'disabled';
@@ -41,10 +38,23 @@ package model;
     var navMobile = 'nav-mobile';
     var materialIcons = 'material-icons';
     var tabsFixedWidth = 'tabs-fixed-width';
+    var tabs = 'tabs';
+    var tab = 'tab';
     var wavesEffect = 'waves-effect';
     var wavesLight = 'waves-light';
+    var wavesBlock = 'waves-block';
     var wavesTea = 'waves-tea';
+    var halfwayFab = 'halfway-fab';
 }
+
+@:enum abstract Buttons(String) from String to String{
+    var btn = 'btn';
+    var btnFlat = 'btn-flat';
+    var btnFloating = 'btn-floating';
+    var btnLarge = 'btn-large';
+    var btnSmall = 'btn-small';
+}
+
 @:enum abstract Forms(String) from String to String{
     var autocomplete = 'autocomplete';
     var withGap = 'with-gap';
@@ -66,20 +76,21 @@ package model;
     var timepicker = 'timepicker';
 }
 
-@:enum abstract Selects(String)from String  to String{
+@:enum abstract Selects(String)from String to String{
     var icons = "icons";
     var browserDefault = "browser-default";
 }
 
-
+@:enum abstract Direction(String) from String to String{
+    var right = 'right';
+    var left = 'left';
+}
 
 @:enum abstract Helpers(String) from String to String{
     var valignWrapper = 'valign-wrapper';
     var leftAlign = 'left-align';
     var centerAlign = 'center-align';
     var rightAlign = 'right-align';
-    var right = 'right';
-    var left = 'left';
     var hide = 'hide';
     var hideOnSmallOnly = 'hide-on-small-only';
     var hideOnMedOnly = 'hide-on-med-only';
@@ -330,6 +341,23 @@ package model;
 
 }
 
+@:enum abstract TextColor(String) from String to String{
+    var whiteText = 'white-text';
+    var grayText = 'gray-text';
+}
+@:enum abstract TextShade(String) from String to String{
+    var textLighten5 = 'text-lighten-5';
+    var textLighten4 = 'text-lighten-4';
+    var textLighten3 = 'text-lighten-3';
+    var textLighten2 = 'text-lighten-2';
+    var textLighten1 = 'text-lighten-1';
+    var textDarken1 = 'text-darken-1';
+    var textDarken2 = 'text-darken-2';
+    var textDarken3 = 'text-darken-3';
+    var textDarken4 = 'text-darken-4';
+    var textDarken5 = 'text-darken-5';
+
+}
 @:enum abstract Icons(String) from String to String{
     var THREED_ROTATION = '3d_rotation';
     var AC_UNIT = 'ac_unit';

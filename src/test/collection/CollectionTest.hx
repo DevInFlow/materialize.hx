@@ -36,7 +36,7 @@ class CollectionTest extends BaseTest {
             else {
 
                 var anchor:AnchorElement = Browser.document.createAnchorElement();
-                anchor.appendChild(new Icon(Icons.SEND));
+                anchor.appendChild(new Icon({icon:Icons.SEND}));
                 anchor.href = "http://www.devinflow.hu";
 
                 listItem.setSecondaryContent(anchor);
@@ -75,7 +75,7 @@ class CollectionTest extends BaseTest {
       </p>';
 
             var anchor:AnchorElement = Browser.document.createAnchorElement();
-            anchor.appendChild(new Icon(Icons.GRADE));
+            anchor.appendChild(new Icon({icon:Icons.GRADE}));
             anchor.href = "http://www.devinflow.hu";
 
             avatarItem.setSecondaryContent(anchor);

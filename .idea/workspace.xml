@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="433550bf-dfb0-4275-a5e6-e3c84e916739" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/macro/Macro.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/collection/BreadcrumbTest.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/collection/ButtonTest.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/collection/CardTest.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/collection/NavbarTest.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Components.hx" afterPath="$PROJECT_DIR$/src/model/Components.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Containers.hx" afterPath="$PROJECT_DIR$/src/model/Containers.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Css.hx" afterPath="$PROJECT_DIR$/src/model/Css.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Test.hx" afterPath="$PROJECT_DIR$/src/test/Test.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/base/BaseTest.hx" afterPath="$PROJECT_DIR$/src/test/base/BaseTest.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/collection/CollectionTest.hx" afterPath="$PROJECT_DIR$/src/test/collection/CollectionTest.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/test.js" afterPath="$PROJECT_DIR$/www/test.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,142 +26,240 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test.hx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Test.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-              <folding>
-                <element signature="e#14#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollectionTest.hx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/collection/CollectionTest.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="70" column="88" lean-forward="false" selection-start-line="70" selection-start-column="88" selection-end-line="70" selection-end-column="88" />
-              <folding>
-                <element signature="e#25#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Components.hx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Components.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="167" column="42" lean-forward="false" selection-start-line="167" selection-start-column="42" selection-end-line="167" selection-end-column="42" />
-              <folding>
-                <element signature="e#16#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Document.hx" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/haxe/std/js/html/Document.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="325" column="4" lean-forward="false" selection-start-line="325" selection-start-column="4" selection-end-line="325" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.hxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.hxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Buttons.hx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Buttons.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Autocomplete.hx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Autocomplete.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseTest.hx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/base/BaseTest.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-              <folding>
-                <element signature="e#19#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="BaseTest.hx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/base/BaseTest.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+                  <folding>
+                    <element signature="e#19#42#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ButtonTest.hx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/collection/ButtonTest.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="765">
+                  <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+                  <folding>
+                    <element signature="e#25#50#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Containers.hx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/model/Containers.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="51" />
+                  <folding>
+                    <element signature="e#15#37#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CardTest.hx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/collection/CardTest.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="407">
+                  <caret line="229" column="57" lean-forward="false" selection-start-line="229" selection-start-column="57" selection-end-line="229" selection-end-column="57" />
+                  <folding>
+                    <element signature="e#25#58#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Components.hx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/model/Components.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="311">
+                  <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#16#38#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HTMLDocument.hx" pinned="false" current-in-tab="false">
+            <entry file="file:///usr/local/lib/haxe/std/js/html/HTMLDocument.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="194">
+                  <caret line="132" column="74" lean-forward="false" selection-start-line="132" selection-start-column="74" selection-end-line="132" selection-end-column="74" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Document.hx" pinned="false" current-in-tab="false">
+            <entry file="file:///usr/local/lib/haxe/std/js/html/Document.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="194">
+                  <caret line="325" column="4" lean-forward="false" selection-start-line="325" selection-start-column="4" selection-end-line="325" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="197">
+                  <caret line="150" column="34" lean-forward="false" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="34" />
+                  <folding>
+                    <marker date="1543765981000" expanded="true" signature="643:746" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="826:903" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="973:1054" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="1160:1266" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="1358:1427" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="1531:1599" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="1679:1756" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="1826:1907" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="2031:2129" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="2339:2374" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="2480:2583" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="2703:3003" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="2836:2946" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="2952:2986" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="3076:3215" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="3132:3187" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="3465:3780" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="3613:3723" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="3729:3763" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="3855:3994" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="3911:3966" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="4064:4122" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="4242:4589" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="4422:4532" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="4538:4572" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="4662:4801" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="4718:4773" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="4869:4927" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="5021:5120" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="5238:5353" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="5468:5480" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="31505:31867" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="31505:31869" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="31695:31732" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="31929:32050" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="32195:35485" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="32227:33531" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="32440:33492" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="32624:32728" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="32734:33409" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="32984:33112" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="33118:33205" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="33561:34108" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="33732:34067" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="34140:35483" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="34310:35442" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="34944:35068" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="35074:35158" ph="{...}" />
+                    <marker date="1543765981000" expanded="true" signature="36471:36641" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Macro.hx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/model/macro/Macro.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#162#195#0" expanded="true" />
+                    <marker date="1543766228000" expanded="true" signature="417:4481" ph="..." />
+                    <marker date="1543766228000" expanded="true" signature="1595:2828" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Css.hx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/model/Css.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#3536#3670#0" expanded="false" />
+                    <element signature="e#3735#3762#0" expanded="false" />
+                    <element signature="e#3828#3931#0" expanded="false" />
+                    <element signature="e#3992#4142#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Macro.hx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/model/macro/Macro.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="328">
+                  <caret line="139" column="29" lean-forward="false" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#21#49#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Type.hx" pinned="false" current-in-tab="false">
+            <entry file="file:///usr/local/lib/haxe/std/Type.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="194">
+                  <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Context.hx" pinned="false" current-in-tab="false">
+            <entry file="file:///usr/local/lib/haxe/std/haxe/macro/Context.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Expr.hx" pinned="false" current-in-tab="false">
+            <entry file="file:///usr/local/lib/haxe/std/haxe/macro/Expr.hx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="141">
+                  <caret line="336" column="0" lean-forward="false" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HaxeInterface" />
         <option value="HaxeClass" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>t</find>
-      <find>small</find>
-      <find>cardPa</find>
-      <find>teal</find>
-      <find>collection</find>
-      <find>left</find>
-      <find>input-field</find>
-      <find>onclick</find>
-      <find>responsiveImg</find>
-      <find>secondary-content</find>
-      <find>strip</find>
-      <find>active</find>
-      <find>fixed-a</find>
-      <find>js.Browser.</find>
       <find>Form</find>
       <find>filled-in</find>
       <find>chips</find>
@@ -160,6 +270,26 @@
       <find>R</find>
       <find>Random</find>
       <find>Random.</find>
+      <find>'left'</find>
+      <find>section</find>
+      <find>type:</find>
+      <find>Icon</find>
+      <find>Button</find>
+      <find>halfway-fab</find>
+      <find>Horizo</find>
+      <find>horizontal</find>
+      <find>TextColo</find>
+      <find>T</find>
+      <find>Tabs</find>
+      <find>tab</find>
+      <find>CardAction</find>
+      <find>domClass</find>
+      <find>new</find>
+      <find>getLocalType</find>
+      <find>CardContent</find>
+      <find>Type</find>
+      <find>TAn</find>
+      <find>Econ</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -176,15 +306,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Parallax.hx" />
-        <option value="$PROJECT_DIR$/src/ScrollSpy.hx" />
-        <option value="$PROJECT_DIR$/src/Sidenav.hx" />
-        <option value="$PROJECT_DIR$/src/Tabs.hx" />
-        <option value="$PROJECT_DIR$/src/Slider.hx" />
-        <option value="$PROJECT_DIR$/src/Dropdown.hx" />
-        <option value="$PROJECT_DIR$/src/Chips.hx" />
-        <option value="$PROJECT_DIR$/src/Pushpin.hx" />
-        <option value="$PROJECT_DIR$/src/Datepicker.hx" />
         <option value="$PROJECT_DIR$/src/Autocomplete.hx" />
         <option value="$PROJECT_DIR$/src/Timepicker/Datepicker.hx" />
         <option value="$PROJECT_DIR$/src/Timepicker.hx" />
@@ -215,18 +336,27 @@
         <option value="$PROJECT_DIR$/../nouislilder.hx/src/noUISlider.hx" />
         <option value="$PROJECT_DIR$/src/test/TestinputE.hx" />
         <option value="$PROJECT_DIR$/src/model/Forms.hx" />
-        <option value="$PROJECT_DIR$/src/model/Containers.hx" />
         <option value="$PROJECT_DIR$/src/Test.hx" />
         <option value="$PROJECT_DIR$/src/test/collection/Collection.hx" />
-        <option value="$PROJECT_DIR$/src/test/base/BaseTest.hx" />
-        <option value="$PROJECT_DIR$/src/model/Css.hx" />
         <option value="$PROJECT_DIR$/src/model/Collections.hx" />
         <option value="$PROJECT_DIR$/haxelib.json" />
-        <option value="$PROJECT_DIR$/src/model/Components.hx" />
-        <option value="$PROJECT_DIR$/src/test/collection/CollectionTest.hx" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/test/CollectionTest.hx" />
+        <option value="$PROJECT_DIR$/src/test/collection/CollectionTest.hx" />
+        <option value="$PROJECT_DIR$/src/model/base/IIconHolder.hx" />
+        <option value="$PROJECT_DIR$/src/model/base/BaseButton.hx" />
+        <option value="$PROJECT_DIR$/src/test/collection/NavbarTest.hx" />
+        <option value="$PROJECT_DIR$/src/test/collection/BreadcrumbTest.hx" />
+        <option value="$PROJECT_DIR$/src/test/base/BaseTest.hx" />
+        <option value="$PROJECT_DIR$/src/test/collection/ButtonTest.hx" />
         <option value="$PROJECT_DIR$/src/test/Test.hx" />
+        <option value="$PROJECT_DIR$/src/model/Containers.hx" />
+        <option value="$PROJECT_DIR$/src/model/Css.hx" />
+        <option value="$PROJECT_DIR$/src/test/collection/CardTest.hx" />
+        <option value="$PROJECT_DIR$/www/test.js" />
+        <option value="$PROJECT_DIR$/src/model/Components.hx" />
+        <option value="$PROJECT_DIR$/src/model/macro/Macro.hx" />
       </list>
     </option>
   </component>
@@ -263,7 +393,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -286,13 +416,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materialize.hx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materialize.hx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materialize.hx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materialize.hx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materialize.hx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materialize.hx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="macro" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -744,6 +928,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="433550bf-dfb0-4275-a5e6-e3c84e916739" name="Default" comment="" />
@@ -757,14 +944,26 @@
       <workItem from="1543389535657" duration="1891000" />
       <workItem from="1543405558782" duration="19047000" />
       <workItem from="1543476040766" duration="17634000" />
+      <workItem from="1543562178022" duration="123000" />
+      <workItem from="1543563036069" duration="8005000" />
+      <workItem from="1543647531958" duration="15570000" />
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <created>1543500184719</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543500184719</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56312000" />
+    <option name="totallyTimeSpent" value="89040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -774,27 +973,27 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3992095" sideWeight="0.5042598" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3992095" sideWeight="0.5149095" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2630458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27103302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905138" sideWeight="0.49574015" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992095" sideWeight="0.4914803" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992095" sideWeight="0.48509052" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905138" sideWeight="0.4914803" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -813,17 +1012,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3992095" sideWeight="0.48509052" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32079208" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25772098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3992095" sideWeight="0.5149095" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27103302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905138" sideWeight="0.4914803" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -834,112 +1033,20 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Chips.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Slider.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tabs.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="77" lean-forward="false" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Parallax.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="85" lean-forward="false" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Materialbox.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="80" lean-forward="false" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modal.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="63" lean-forward="false" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="63" />
-          <folding>
-            <element signature="e#10#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sidenav.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="83" lean-forward="false" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
-          <folding>
-            <element signature="e#11#34#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ScrollSpy.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="87" lean-forward="false" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/haxe/std/js/html/EventTarget.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/haxe/std/js/html/Node.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/badges/BadgesDropdown.hx" />
-    <entry file="file://$PROJECT_DIR$/src/components/badges/Collections.hx" />
     <entry file="file:///usr/local/lib/haxe/std/js/html/Element.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
           <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -947,6 +1054,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -957,6 +1065,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -965,7 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
           <caret line="48" column="45" lean-forward="false" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -975,6 +1083,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -982,6 +1091,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="772" column="4" lean-forward="false" selection-start-line="772" selection-start-column="4" selection-end-line="772" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -995,6 +1105,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,47 +1113,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestinputE.hx" />
-    <entry file="file://$PROJECT_DIR$/src/model/Containers.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/haxe/std/js/html/Document.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="325" column="4" lean-forward="false" selection-start-line="325" selection-start-column="4" selection-end-line="325" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/base/BaseTest.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding>
-            <element signature="e#19#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Collections.hx" />
     <entry file="file://$PROJECT_DIR$/src/model/Forms.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="167" column="18" lean-forward="false" selection-start-line="167" selection-start-column="18" selection-end-line="167" selection-end-column="18" />
-          <folding>
-            <element signature="e#15#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,49 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Css.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="e#2435#3182#0" expanded="false" />
-            <element signature="e#3242#3376#0" expanded="false" />
-            <element signature="e#3441#3468#0" expanded="false" />
-            <element signature="e#3534#3637#0" expanded="false" />
-            <element signature="e#3698#3848#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/haxe/std/js/html/HTMLDocument.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="126" column="79" lean-forward="true" selection-start-line="126" selection-start-column="79" selection-end-line="126" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Components.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="167" column="42" lean-forward="false" selection-start-line="167" selection-start-column="42" selection-end-line="167" selection-end-column="42" />
-          <folding>
-            <element signature="e#16#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/collection/CollectionTest.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="70" column="88" lean-forward="false" selection-start-line="70" selection-start-column="88" selection-end-line="70" selection-end-column="88" />
-          <folding>
-            <element signature="e#25#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,7 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,25 +1143,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Test.hx">
+    <entry file="file://$PROJECT_DIR$/../nouislilder.hx/src/Direction.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.hxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1143,6 +1166,242 @@
         <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.hxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/base/IIconHolder.hx" />
+    <entry file="file://$PROJECT_DIR$/src/model/base/BaseButton.hx" />
+    <entry file="file://$PROJECT_DIR$/src/test/collection/CollectionTest.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#25#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/collection/NavbarTest.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="e#25#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Test.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#14#46#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/collection/BreadcrumbTest.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="e#25#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/base/BaseTest.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding>
+            <element signature="e#19#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/collection/ButtonTest.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+          <folding>
+            <element signature="e#25#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/haxe/std/js/html/DOMTokenList.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="27" lean-forward="false" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/haxe/std/haxe/extern/EitherType.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/collection/CardTest.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="229" column="57" lean-forward="false" selection-start-line="229" selection-start-column="57" selection-end-line="229" selection-end-column="57" />
+          <folding>
+            <element signature="e#25#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Containers.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="51" />
+          <folding>
+            <element signature="e#15#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Css.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="27" />
+          <folding>
+            <element signature="e#3536#3670#0" expanded="false" />
+            <element signature="e#3735#3762#0" expanded="false" />
+            <element signature="e#3828#3931#0" expanded="false" />
+            <element signature="e#3992#4142#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/haxe/std/js/html/HTMLDocument.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="132" column="74" lean-forward="false" selection-start-line="132" selection-start-column="74" selection-end-line="132" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="150" column="34" lean-forward="false" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="34" />
+          <folding>
+            <marker date="1543765981000" expanded="true" signature="643:746" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="826:903" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="973:1054" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="1160:1266" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="1358:1427" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="1531:1599" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="1679:1756" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="1826:1907" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="2031:2129" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="2339:2374" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="2480:2583" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="2703:3003" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="2836:2946" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="2952:2986" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="3076:3215" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="3132:3187" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="3465:3780" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="3613:3723" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="3729:3763" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="3855:3994" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="3911:3966" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="4064:4122" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="4242:4589" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="4422:4532" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="4538:4572" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="4662:4801" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="4718:4773" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="4869:4927" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="5021:5120" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="5238:5353" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="5468:5480" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="31505:31867" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="31505:31869" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="31695:31732" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="31929:32050" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="32195:35485" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="32227:33531" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="32440:33492" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="32624:32728" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="32734:33409" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="32984:33112" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="33118:33205" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="33561:34108" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="33732:34067" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="34140:35483" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="34310:35442" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="34944:35068" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="35074:35158" ph="{...}" />
+            <marker date="1543765981000" expanded="true" signature="36471:36641" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/haxe/std/js/html/Document.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="325" column="4" lean-forward="false" selection-start-line="325" selection-start-column="4" selection-end-line="325" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Components.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/haxe/std/haxe/macro/Expr.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="336" column="0" lean-forward="false" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/haxe/std/haxe/macro/Context.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/haxe/std/Type.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/macro/Macro.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="139" column="29" lean-forward="false" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
+          <folding>
+            <element signature="e#21#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

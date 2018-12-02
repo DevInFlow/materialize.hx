@@ -1,4 +1,8 @@
 package test;
+import test.collection.CardTest;
+import test.collection.NavbarTest;
+import test.collection.BreadcrumbTest;
+import test.collection.ButtonTest;
 import js.Browser;
 import js.jquery.JQuery;
 import model.Containers.Container;
@@ -15,6 +19,10 @@ class Test {
             var container:Container = new Container();
 
             new CollectionTest(container);
+            new ButtonTest(container);
+            new BreadcrumbTest(container);
+            new NavbarTest(container);
+            new CardTest(container);
 
             Browser.document.body.appendChild(container);
         });

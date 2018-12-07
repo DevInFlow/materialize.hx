@@ -1,12 +1,12 @@
 package test;
-import test.collection.CardTest;
-import test.collection.NavbarTest;
-import test.collection.BreadcrumbTest;
-import test.collection.ButtonTest;
+import test.componenets.CardTest;
+import test.componenets.NavbarTest;
+import test.componenets.BreadcrumbTest;
+import test.componenets.ButtonTest;
 import js.Browser;
 import js.jquery.JQuery;
-import model.Containers.Container;
-import test.collection.CollectionTest;
+import model.Components.Container;
+import test.componenets.CollectionTest;
 using js.jquery.Plugin;
 class Test {
     public static function main() new Test();

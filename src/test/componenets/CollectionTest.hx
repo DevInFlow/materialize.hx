@@ -1,4 +1,4 @@
-package test.collection;
+package test.componenets;
 import js.Browser;
 import js.html.AnchorElement;
 import model.Components.AnchorCollection;
@@ -6,7 +6,7 @@ import model.Components.AnchorCollectionItem;
 import model.Components.Icon;
 import model.Components.ListCollection;
 import model.Components.ListCollectionItem;
-import model.Containers.Container;
+import model.Components.Container;
 import model.Css.Componenets;
 import model.Css.Icons;
 import test.base.BaseTest;
@@ -36,7 +36,7 @@ class CollectionTest extends BaseTest {
             else {
 
                 var anchor:AnchorElement = Browser.document.createAnchorElement();
-                anchor.appendChild(new Icon({icon:Icons.SEND}));
+//                anchor.appendChild(new Icon({icon:Icons.SEND}));
                 anchor.href = "http://www.devinflow.hu";
 
                 listItem.setSecondaryContent(anchor);

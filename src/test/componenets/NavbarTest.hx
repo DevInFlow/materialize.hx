@@ -1,4 +1,4 @@
-package test.collection;
+package test.componenets;
 import js.html.LIElement;
 import test.base.BaseTest;
 import model.Components.NavMobile;
@@ -10,9 +10,9 @@ import model.Components.Nav;
 import js.Browser;
 import js.html.Element;
 import model.Components.BrandLogo;
-import model.Containers.Col;
-import model.Containers.Row;
-import model.Containers.Container;
+import model.Components.Col;
+import model.Components.Row;
+import model.Components.Container;
 class NavbarTest extends BaseTest {
     public function new(container:Container) {
         super(container);

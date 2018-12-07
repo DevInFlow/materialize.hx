@@ -13,272 +13,115 @@ import model.Css.Grid;
 
 //TODO NAV
 
-@:build(model.macro.Macro.direction())
 @:forward
-abstract BrandLogo(AnchorElement) to AnchorElement{
-    public inline function new() {
-        this = document.createAnchorElement();
-        this.classList.add(brandLogo);
-    }
-
-}
+@:build(model.macro.Macro.domContainer(AnchorElement, 'brand-logo'))
+abstract BrandLogo(AnchorElement) to AnchorElement{}
 
 @:forward
-abstract NavWrapper(DivElement) to DivElement{
-    public inline function new() {
-        this = document.createDivElement();
-        this.classList.add(navWrapper);
-    }
+@:build(model.macro.Macro.domContainer(DivElement, 'nav-wrapper'))
+abstract NavWrapper(DivElement) to DivElement{}
 
-}
 @:forward
-abstract Nav(Element) to Element{
-    public inline function new() {
-        this = document.createElement('nav');
-    }
+@:build(model.macro.Macro.domContainer(nav, 'nav'))
+abstract Nav(Element) to Element{}
 
-}
-@:build(model.macro.Macro.direction())
 @:forward
-abstract NavMobile(UListElement) to UListElement{
-    public inline function new() {
-        this = document.createUListElement();
-    }
-
-}
+@:build(model.macro.Macro.domContainer(UListElement))
+abstract NavMobile(UListElement) to UListElement{}
 //TODO BREADCRUMB
 @:forward
+@:build(model.macro.Macro.domContainer(DivElement, 'col'))
 abstract BreadcrumbContainer (DivElement) to DivElement {
-    public inline function new() {
-        this = cast js.Browser.document.createDivElement();
-        this.classList.add(col);
-    }
-
-    public function addItem(breadcrumb:Breadcrumb):Void {
-        this.appendChild(breadcrumb);
-    }
-
-    public function removeItem(breadcrumb:Breadcrumb):Void {
-        this.removeChild(breadcrumb);
-    }
+    public function addItem(breadcrumb:Breadcrumb):Void this.appendChild(breadcrumb);
+    public function removeItem(breadcrumb:Breadcrumb):Void this.removeChild(breadcrumb);
 }
 
 @:forward
-abstract Breadcrumb (AnchorElement) to AnchorElement{
-    public inline function new() {
-        this = cast js.Browser.document.createAnchorElement();
-        this.classList.add(breadcrumb);
-    }
-}
+@:build(model.macro.Macro.domContainer(AnchorElement, 'breadcrumb'))
+abstract Breadcrumb (AnchorElement) to AnchorElement{}
 
 //TODO BUTTONS
 
-typedef ButtonProperties = {
-?type:Buttons
-}
-
-@:build(model.macro.Macro.iconize())
 @:forward
-abstract RaisedButton (AnchorElement) to AnchorElement{
-    public inline function new(?properties:ButtonProperties) {
-        this = cast document.createAnchorElement();
-        this.classList.add(wavesEffect, wavesLight, btn);
+@:build(model.macro.Macro.domContainer(AnchorElement, 'btn', 'waves-effect', 'waves-light'))
+abstract RaisedButton (AnchorElement) to AnchorElement{}
 
-        if (properties != null)
-            this.classList.add((Reflect.hasField(properties, 'type')) ? properties.type : btn);
-        else
-            this.classList.add(btn);
-    }
-}
-@:build(model.macro.Macro.iconize())
 @:forward
-abstract FloatingButton (AnchorElement) to AnchorElement {
-    public inline function new(?properties:ButtonProperties) {
-        this = cast document.createAnchorElement();
-        this.classList.add(btnFloating, wavesEffect, wavesLight, red);
-        if (properties != null)
-            this.classList.add((Reflect.hasField(properties, 'type')) ? properties.type : btn);
-        else
-            this.classList.add(btn);
-    }
-}
+@:build(model.macro.Macro.domContainer(AnchorElement, 'red', 'btn-floating', 'waves-effect', 'waves-light'))
+abstract FloatingButton (AnchorElement) to AnchorElement {}
 
-
-@:build(model.macro.Macro.iconize())
 @:forward
-abstract SubmitButton (ButtonElement) to ButtonElement {
-    public inline function new(?properties:ButtonProperties) {
-        this = cast document.createButtonElement();
-
-        this.classList.add(wavesEffect, wavesLight);
-        this.type = 'submit';
-        this.name = 'action';
-        if (properties != null)
-            this.classList.add((Reflect.hasField(properties, 'type')) ? properties.type : btn);
-        else
-            this.classList.add(btn);
-    }
-}
+@:build(model.macro.Macro.domContainer(ButtonElement, 'waves-effect', 'waves-light','btn'))
+abstract SubmitButton (ButtonElement) to ButtonElement {}
 
 //TODO CARDS
 
 @:forward
-abstract Card (DivElement) to DivElement {
-    public inline function new() {
-        this = cast document.createDivElement();
-
-
-        this.classList.add(card);
-    }
-}
+@:build(model.macro.Macro.domContainer(DivElement, 'card'))
+abstract Card (DivElement) to DivElement {}
 
 @:forward
-abstract CardStickyAction (DivElement) to DivElement {
-    public inline function new() {
-        this = cast document.createDivElement();
-        this.classList.add(card, stickyAction);
-    }
-}
+@:build(model.macro.Macro.domContainer(DivElement, 'card', 'sticky-action'))
+abstract CardStickyAction (DivElement) to DivElement {}
 
-@:genericBuild(model.macro.Macro.domContainer(DivElement))
-@:forward
-abstract CardContent (DivElement) to DivElement {
-//    public inline function new(?content:EitherType<Array<Element>, String>) {
-//        var i = model.macro.Macro.construct(DivElement);
-//        this = cast document.createDivElement();
-//        this.classList.add(cardContent);
-//
-//
-//        if (content != null) {
-//            if (Std.is(content, Array)) {
-////                for
-//                trace('it is array') ;
-//            }
-//            else {
-//
-//                trace('it is string');
-//            }
-//
-//
-////            switch()trace()
-//        }
-//    }
-}
 
 @:forward
-abstract CardTitle (SpanElement) to SpanElement {
-    public inline function new(?text:String) {
-        this = cast document.createSpanElement();
-        this.classList.add(cardTitle);
-        if (text != null) this.innerHTML = text;
-    }
-
-    public function appendHtml(html:String):Void {
-        this.innerHTML += html;
-    }
-}
+@:build(model.macro.Macro.domContainer(DivElement, 'card-content'))
+abstract CardContent (DivElement) to DivElement {}
 
 @:forward
-abstract CardAction (DivElement) to DivElement {
-    public inline function new() {
-        this = cast document.createDivElement();
-        this.classList.add(cardAction);
-    }
-}
+@:build(model.macro.Macro.domContainer(SpanElement, 'card-title'))
+abstract CardTitle (SpanElement) to SpanElement {}
 
 @:forward
-abstract CardImage (DivElement) to DivElement {
-    public inline function new(src:String) {
-        this = cast document.createDivElement();
-        this.classList.add(cardImage, wavesEffect, wavesLight, wavesBlock);
-        var img:ImageElement = document.createImageElement();
-        img.classList.add(activator);
-        img.src = src;
-        this.appendChild(img);
-    }
-}
+@:build(model.macro.Macro.domContainer(DivElement, 'card-action'))
+abstract CardAction (DivElement) to DivElement {}
 
 @:forward
-abstract CardStacked (DivElement) to DivElement {
-    public inline function new() {
-        this = cast document.createDivElement();
-        this.classList.add(cardStacked);
-    }
-}
+@:build(model.macro.Macro.domContainer(DivElement, 'card-image', 'wave'))
+abstract CardImage (DivElement) to DivElement {}
 
 @:forward
-abstract CardReveal (DivElement) to DivElement {
-    public inline function new() {
-        this = cast document.createDivElement();
-        this.classList.add(cardReveal);
-    }
-}
+@:build(model.macro.Macro.domContainer(DivElement, 'card-stacked'))
+abstract CardStacked (DivElement) to DivElement {}
 
 @:forward
-abstract CardTabs (DivElement) to DivElement {
-    public inline function new() {
-        this = cast document.createDivElement();
-        this.classList.add(cardTabs);
-    }
-}
+@:build(model.macro.Macro.domContainer(DivElement, 'card-reveal'))
+abstract CardReveal (DivElement) to DivElement {}
 
 @:forward
-abstract CardPanel (DivElement) to DivElement {
-    public inline function new() {
-        this = cast document.createDivElement();
-        this.classList.add(cardPanel);
-    }
-}
+@:build(model.macro.Macro.domContainer(DivElement, 'card-tabs'))
+abstract CardTabs (DivElement) to DivElement {}
+
+@:forward
+abstract CardPanel (DivElement) to DivElement {}
 
 //TODO TABS
 
 @:forward
+@:build(model.macro.Macro.domContainer(UListElement, 'tabs'))
 abstract Tabs (UListElement) to UListElement{
-    public inline function new() {
-        this = document.createUListElement();
-        this.classList.add(tabs);
-    }
 
-    public function appendTab(tab:Tab):Void {
-        this.appendChild(tab);
-    }
+    public function appendTab(tab:Tab):Void this.appendChild(tab);
 
-    public function removeTab(tab:Tab):Void {
-        this.removeChild(tab);
-    }
+    public function removeTab(tab:Tab):Void this.removeChild(tab);
 }
 
 @:forward
-abstract Tab (LIElement) to LIElement{
-    public inline function new() {
-        this = document.createLIElement();
-        this.classList.add(tab);
-    }
-}
+@:build(model.macro.Macro.domContainer(LIElement, 'tab'))
+abstract Tab (LIElement) to LIElement{}
 
 
 //TODO COLLECTIONS
 @:forward
+@:build(model.macro.Macro.domContainer(UListElement, 'componenets'))
 abstract ListCollection (UListElement) to UListElement{
-    public inline function new() {
-        this = document.createUListElement();
-        this.classList.add(Componenets.collection);
-    }
-
-    public function addItem(value:ListCollectionItem):Void {
-
-        value.classList.add(Componenets.collectionItem);
-        this.appendChild(value);
-    }
+    public function addItem(value:ListCollectionItem):Void this.appendChild(value);
 }
 
 @:forward
+@:build(model.macro.Macro.domContainer(LIElement, 'componenets-item'))
 abstract ListCollectionItem(LIElement) to LIElement{
-    public inline function new():Void {
-        this = document.createLIElement();
-        this.classList.add(Componenets.collectionItem);
-
-    }
 
     public function setSecondaryContent(secondary:Element):Void {
         if (new JQuery(this).has('.' + secondaryContent).length == 0) {
@@ -287,31 +130,19 @@ abstract ListCollectionItem(LIElement) to LIElement{
             secondary.classList.add(secondaryContent);
             div.appendChild(secondary);
             this.innerHTML = div.outerHTML;
-
         }
     }
 }
 
 @:forward
+@:build(model.macro.Macro.domContainer(DivElement, 'componenets'))
 abstract AnchorCollection (DivElement) to DivElement{
-    public inline function new() {
-        this = document.createDivElement();
-        this.classList.add(Componenets.collection);
-    }
-
-    public function addItem(value:AnchorCollectionItem):Void {
-        value.classList.add(Componenets.collectionItem);
-        this.appendChild(value);
-    }
+    public function addItem(value:AnchorCollectionItem):Void this.appendChild(value);
 }
 
 @:forward
-abstract AnchorCollectionItem(AnchorElement) to AnchorElement{
-    public inline function new():Void {
-        this = document.createAnchorElement();
-        this.classList.add(Componenets.collectionItem);
-    }
-}
+@:build(model.macro.Macro.domContainer(AnchorElement, 'componenets-item'))
+abstract AnchorCollectionItem(AnchorElement) to AnchorElement{}
 
 
 //TODO ICON
@@ -319,23 +150,23 @@ typedef IconParams = {
 icon:Icons,
 ?direction:model.Css.Direction
 }
-@:build(model.macro.Macro.direction())
 @:forward
+@:build(model.macro.Macro.domContainer(i, 'material-icons','right'))
 abstract Icon(Element) to Element{
-    public inline function new(params:IconParams):Void {
-        this = cast js.Browser.document.createElement('i');
-        this.classList.add(Componenets.materialIcons);
-        if (Reflect.hasField(params, 'direction'))
-            setDirection(params.direction);
-        else
-            setDirection(model.Css.Direction.right);
-
-
-        this.innerText = params.icon;
-    }
 
     public inline function changeIcon(icon:Icons):Void {
         this.innerText = icon;
     }
 }
 
+@:forward
+@:build(model.macro.Macro.domContainer(DivElement, 'container'))
+abstract Container(DivElement) to DivElement{}
+
+@:forward
+@:build(model.macro.Macro.domContainer(DivElement, 'row'))
+abstract Row(DivElement) to DivElement{}
+
+@:forward
+@:build(model.macro.Macro.domContainer(DivElement, 'col'))
+abstract Col(DivElement) to DivElement{}

@@ -22,10 +22,10 @@ package model;
     var collapsible = 'collapsible';
     var collapsibleBody = 'collapsible-body';
     var collapsibleHeader = 'collapsible-header';
-    var collection = 'collection';
-    var collectionItem = 'collection-item';
+    var collection = 'componenets';
+    var collectionItem = 'componenets-item';
 
-    var collectionHeader = 'collection-header';
+    var collectionHeader = 'componenets-header';
     var withHeader = 'with-header';
     var horizontal = 'horizontal';
     var header = 'header';
@@ -358,7 +358,8 @@ package model;
     var textDarken5 = 'text-darken-5';
 
 }
-@:enum abstract Icons(String) from String to String{
+@:forward
+@:enum abstract Icons(String) to String{
     var THREED_ROTATION = '3d_rotation';
     var AC_UNIT = 'ac_unit';
     var ACCESS_ALARM = 'access_alarm';

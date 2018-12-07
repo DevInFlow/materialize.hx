@@ -14,11 +14,139 @@ HxOverrides.iter = function(a) {
 		return this.arr[this.cur++];
 	}};
 };
+var Reflect = function() { };
+Reflect.field = function(o,field) {
+	try {
+		return o[field];
+	} catch( e ) {
+		return null;
+	}
+};
+Reflect.fields = function(o) {
+	var a = [];
+	if(o != null) {
+		var hasOwnProperty = Object.prototype.hasOwnProperty;
+		for( var f in o ) {
+		if(f != "__id__" && f != "hx__closures__" && hasOwnProperty.call(o,f)) {
+			a.push(f);
+		}
+		}
+	}
+	return a;
+};
 var model__$Components_BrandLogo_$Impl_$ = {};
-model__$Components_BrandLogo_$Impl_$._new = function() {
+model__$Components_BrandLogo_$Impl_$._new = function(params) {
 	var this1 = window.document.createElement("a");
-	this1.classList.add("brand-logo");
+	var _g = 0;
+	var _g1 = ["brand-logo"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
+};
+model__$Components_BrandLogo_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_BrandLogo_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_BrandLogo_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
 };
 model__$Components_BrandLogo_$Impl_$.setDirection = function(this1,direction) {
 	this1.classList.remove("right","left");
@@ -31,20 +159,366 @@ model__$Components_BrandLogo_$Impl_$.getDirection = function(this1) {
 	return "left";
 };
 var model__$Components_NavWrapper_$Impl_$ = {};
-model__$Components_NavWrapper_$Impl_$._new = function() {
+model__$Components_NavWrapper_$Impl_$._new = function(params) {
 	var this1 = window.document.createElement("div");
-	this1.classList.add("nav-wrapper");
+	var _g = 0;
+	var _g1 = ["nav-wrapper"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
+};
+model__$Components_NavWrapper_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_NavWrapper_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_NavWrapper_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_NavWrapper_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_NavWrapper_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
 };
 var model__$Components_Nav_$Impl_$ = {};
-model__$Components_Nav_$Impl_$._new = function() {
+model__$Components_Nav_$Impl_$._new = function(params) {
 	var this1 = window.document.createElement("nav");
+	var _g = 0;
+	var _g1 = ["nav"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
 };
+model__$Components_Nav_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_Nav_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_Nav_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_Nav_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_Nav_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
 var model__$Components_NavMobile_$Impl_$ = {};
-model__$Components_NavMobile_$Impl_$._new = function() {
+model__$Components_NavMobile_$Impl_$._new = function(params) {
 	var this1 = window.document.createElement("ul");
+	var _g = 0;
+	var _g1 = [];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
+};
+model__$Components_NavMobile_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_NavMobile_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_NavMobile_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
 };
 model__$Components_NavMobile_$Impl_$.setDirection = function(this1,direction) {
 	this1.classList.remove("right","left");
@@ -57,198 +531,2306 @@ model__$Components_NavMobile_$Impl_$.getDirection = function(this1) {
 	return "left";
 };
 var model__$Components_BreadcrumbContainer_$Impl_$ = {};
-model__$Components_BreadcrumbContainer_$Impl_$._new = function() {
-	var this1 = window.document.createElement("div");
-	this1.classList.add("col");
-	return this1;
-};
 model__$Components_BreadcrumbContainer_$Impl_$.addItem = function(this1,breadcrumb) {
 	this1.appendChild(breadcrumb);
 };
 model__$Components_BreadcrumbContainer_$Impl_$.removeItem = function(this1,breadcrumb) {
 	this1.removeChild(breadcrumb);
 };
-var model__$Components_Breadcrumb_$Impl_$ = {};
-model__$Components_Breadcrumb_$Impl_$._new = function() {
-	var this1 = window.document.createElement("a");
-	this1.classList.add("breadcrumb");
-	return this1;
-};
-var model__$Components_RaisedButton_$Impl_$ = {};
-model__$Components_RaisedButton_$Impl_$._new = function(properties) {
-	var this1 = window.document.createElement("a");
-	this1.classList.add("waves-effect","waves-light","btn");
-	if(properties != null) {
-		this1.classList.add(Object.prototype.hasOwnProperty.call(properties,"type") ? properties.type : "btn");
-	} else {
-		this1.classList.add("btn");
-	}
-	return this1;
-};
-model__$Components_RaisedButton_$Impl_$.setIcon = function(this1,icon) {
-	if($(this1).has("i." + "material-icons").length > 0) {
-		$(this1).find("i." + "material-icons").remove();
-	}
-	this1.appendChild(icon);
-};
-model__$Components_RaisedButton_$Impl_$.getIcon = function(this1) {
-	return $(this1).find("i." + "material-icons").get(0);
-};
-var model__$Components_FloatingButton_$Impl_$ = {};
-model__$Components_FloatingButton_$Impl_$._new = function(properties) {
-	var this1 = window.document.createElement("a");
-	this1.classList.add("btn-floating","waves-effect","waves-light","red");
-	if(properties != null) {
-		this1.classList.add(Object.prototype.hasOwnProperty.call(properties,"type") ? properties.type : "btn");
-	} else {
-		this1.classList.add("btn");
-	}
-	return this1;
-};
-model__$Components_FloatingButton_$Impl_$.setIcon = function(this1,icon) {
-	if($(this1).has("i." + "material-icons").length > 0) {
-		$(this1).find("i." + "material-icons").remove();
-	}
-	this1.appendChild(icon);
-};
-model__$Components_FloatingButton_$Impl_$.getIcon = function(this1) {
-	return $(this1).find("i." + "material-icons").get(0);
-};
-var model__$Components_SubmitButton_$Impl_$ = {};
-model__$Components_SubmitButton_$Impl_$._new = function(properties) {
-	var this1 = window.document.createElement("button");
-	this1.classList.add("waves-effect","waves-light");
-	this1.type = "submit";
-	this1.name = "action";
-	if(properties != null) {
-		this1.classList.add(Object.prototype.hasOwnProperty.call(properties,"type") ? properties.type : "btn");
-	} else {
-		this1.classList.add("btn");
-	}
-	return this1;
-};
-model__$Components_SubmitButton_$Impl_$.setIcon = function(this1,icon) {
-	if($(this1).has("i." + "material-icons").length > 0) {
-		$(this1).find("i." + "material-icons").remove();
-	}
-	this1.appendChild(icon);
-};
-model__$Components_SubmitButton_$Impl_$.getIcon = function(this1) {
-	return $(this1).find("i." + "material-icons").get(0);
-};
-var model__$Components_Card_$Impl_$ = {};
-model__$Components_Card_$Impl_$._new = function() {
+model__$Components_BreadcrumbContainer_$Impl_$._new = function(params) {
 	var this1 = window.document.createElement("div");
-	this1.classList.add("card");
-	return this1;
-};
-var model__$Components_CardStickyAction_$Impl_$ = {};
-model__$Components_CardStickyAction_$Impl_$._new = function() {
-	var this1 = window.document.createElement("div");
-	this1.classList.add("card","sticky-action");
-	return this1;
-};
-var model__$Components_CardContent_$Impl_$ = {};
-model__$Components_CardContent_$Impl_$._new = function(content) {
-	var this1;
-	var i = window.document.createElement("div");
-	this1 = window.document.createElement("div");
-	this1.classList.add("card-content");
-	if(content != null) {
-		if((content instanceof Array) && content.__enum__ == null) {
-			console.log("it is array");
-		} else {
-			console.log("it is string");
+	var _g = 0;
+	var _g1 = ["col"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
 		}
 	}
 	return this1;
 };
-var model__$Components_CardTitle_$Impl_$ = {};
-model__$Components_CardTitle_$Impl_$._new = function(text) {
-	var this1 = window.document.createElement("span");
-	this1.classList.add("card-title");
-	if(text != null) {
-		this1.innerHTML = text;
+model__$Components_BreadcrumbContainer_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_BreadcrumbContainer_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_BreadcrumbContainer_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_BreadcrumbContainer_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_BreadcrumbContainer_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_Breadcrumb_$Impl_$ = {};
+model__$Components_Breadcrumb_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("a");
+	var _g = 0;
+	var _g1 = ["breadcrumb"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
 	}
 	return this1;
 };
-model__$Components_CardTitle_$Impl_$.appendHtml = function(this1,html) {
-	this1.innerHTML += html;
+model__$Components_Breadcrumb_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_Breadcrumb_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_Breadcrumb_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_Breadcrumb_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_Breadcrumb_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_RaisedButton_$Impl_$ = {};
+model__$Components_RaisedButton_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("a");
+	var _g = 0;
+	var _g1 = ["btn","waves-effect","waves-light"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(Object.prototype.hasOwnProperty.call(params,"icon")) {
+		var params1 = { icon : params.icon, direction : params.direction != null ? params.direction : "right"};
+		var this2 = window.document.createElement("i");
+		var _g4 = 0;
+		var _g12 = ["material-icons","right"];
+		while(_g4 < _g12.length) {
+			var cls1 = _g12[_g4];
+			++_g4;
+			this2.classList.add(cls1);
+		}
+		if(params1 != null) {
+			var _g5 = 0;
+			var _g13 = Reflect.fields(params1);
+			while(_g5 < _g13.length) {
+				var field2 = _g13[_g5];
+				++_g5;
+				switch(field2) {
+				case "elements":
+					var _g22 = 0;
+					var _g31 = Reflect.fields(params1.elements);
+					while(_g22 < _g31.length) {
+						var field3 = _g31[_g22];
+						++_g22;
+						this2.appendChild(Reflect.field(params1.elements,field3));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params1.html;
+					break;
+				case "text":
+					this2.innerText += params1.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params1,"direction")) {
+			var direction = params1.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params1.icon;
+		if(params1 != null) {
+			if(Object.prototype.hasOwnProperty.call(params1,"classList")) {
+				var _g6 = 0;
+				var _g14 = Reflect.fields(params1.classList);
+				while(_g6 < _g14.length) {
+					var field4 = _g14[_g6];
+					++_g6;
+					this2.classList.add(Reflect.field(params1.classList,field4));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g7 = 0;
+			var _g15 = Reflect.fields(params.classList);
+			while(_g7 < _g15.length) {
+				var field5 = _g15[_g7];
+				++_g7;
+				this1.classList.add(Reflect.field(params.classList,field5));
+			}
+		}
+	}
+	return this1;
+};
+model__$Components_RaisedButton_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_RaisedButton_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_RaisedButton_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_RaisedButton_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_RaisedButton_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_FloatingButton_$Impl_$ = {};
+model__$Components_FloatingButton_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("a");
+	var _g = 0;
+	var _g1 = ["red","btn-floating","waves-effect","waves-light"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(Object.prototype.hasOwnProperty.call(params,"icon")) {
+		var params1 = { icon : params.icon, direction : params.direction != null ? params.direction : "right"};
+		var this2 = window.document.createElement("i");
+		var _g4 = 0;
+		var _g12 = ["material-icons","right"];
+		while(_g4 < _g12.length) {
+			var cls1 = _g12[_g4];
+			++_g4;
+			this2.classList.add(cls1);
+		}
+		if(params1 != null) {
+			var _g5 = 0;
+			var _g13 = Reflect.fields(params1);
+			while(_g5 < _g13.length) {
+				var field2 = _g13[_g5];
+				++_g5;
+				switch(field2) {
+				case "elements":
+					var _g22 = 0;
+					var _g31 = Reflect.fields(params1.elements);
+					while(_g22 < _g31.length) {
+						var field3 = _g31[_g22];
+						++_g22;
+						this2.appendChild(Reflect.field(params1.elements,field3));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params1.html;
+					break;
+				case "text":
+					this2.innerText += params1.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params1,"direction")) {
+			var direction = params1.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params1.icon;
+		if(params1 != null) {
+			if(Object.prototype.hasOwnProperty.call(params1,"classList")) {
+				var _g6 = 0;
+				var _g14 = Reflect.fields(params1.classList);
+				while(_g6 < _g14.length) {
+					var field4 = _g14[_g6];
+					++_g6;
+					this2.classList.add(Reflect.field(params1.classList,field4));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g7 = 0;
+			var _g15 = Reflect.fields(params.classList);
+			while(_g7 < _g15.length) {
+				var field5 = _g15[_g7];
+				++_g7;
+				this1.classList.add(Reflect.field(params.classList,field5));
+			}
+		}
+	}
+	return this1;
+};
+model__$Components_FloatingButton_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_FloatingButton_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_FloatingButton_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_FloatingButton_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_FloatingButton_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_SubmitButton_$Impl_$ = {};
+model__$Components_SubmitButton_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("button");
+	var _g = 0;
+	var _g1 = ["waves-effect","waves-light","btn"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(Object.prototype.hasOwnProperty.call(params,"icon")) {
+		var params1 = { icon : params.icon, direction : params.direction != null ? params.direction : "right"};
+		var this2 = window.document.createElement("i");
+		var _g4 = 0;
+		var _g12 = ["material-icons","right"];
+		while(_g4 < _g12.length) {
+			var cls1 = _g12[_g4];
+			++_g4;
+			this2.classList.add(cls1);
+		}
+		if(params1 != null) {
+			var _g5 = 0;
+			var _g13 = Reflect.fields(params1);
+			while(_g5 < _g13.length) {
+				var field2 = _g13[_g5];
+				++_g5;
+				switch(field2) {
+				case "elements":
+					var _g22 = 0;
+					var _g31 = Reflect.fields(params1.elements);
+					while(_g22 < _g31.length) {
+						var field3 = _g31[_g22];
+						++_g22;
+						this2.appendChild(Reflect.field(params1.elements,field3));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params1.html;
+					break;
+				case "text":
+					this2.innerText += params1.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params1,"direction")) {
+			var direction = params1.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params1.icon;
+		if(params1 != null) {
+			if(Object.prototype.hasOwnProperty.call(params1,"classList")) {
+				var _g6 = 0;
+				var _g14 = Reflect.fields(params1.classList);
+				while(_g6 < _g14.length) {
+					var field4 = _g14[_g6];
+					++_g6;
+					this2.classList.add(Reflect.field(params1.classList,field4));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g7 = 0;
+			var _g15 = Reflect.fields(params.classList);
+			while(_g7 < _g15.length) {
+				var field5 = _g15[_g7];
+				++_g7;
+				this1.classList.add(Reflect.field(params.classList,field5));
+			}
+		}
+	}
+	this1.type = "submit";
+	this1.name = "action";
+	return this1;
+};
+model__$Components_SubmitButton_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_SubmitButton_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_SubmitButton_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_SubmitButton_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_SubmitButton_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_Card_$Impl_$ = {};
+model__$Components_Card_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("div");
+	var _g = 0;
+	var _g1 = ["card"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
+	return this1;
+};
+model__$Components_Card_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_Card_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_Card_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_Card_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_Card_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_CardStickyAction_$Impl_$ = {};
+model__$Components_CardStickyAction_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("div");
+	var _g = 0;
+	var _g1 = ["card","sticky-action"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
+	return this1;
+};
+model__$Components_CardStickyAction_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_CardStickyAction_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_CardStickyAction_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_CardStickyAction_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_CardStickyAction_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_CardContent_$Impl_$ = {};
+model__$Components_CardContent_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("div");
+	var _g = 0;
+	var _g1 = ["card-content"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
+	return this1;
+};
+model__$Components_CardContent_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_CardContent_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_CardContent_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_CardContent_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_CardContent_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_CardTitle_$Impl_$ = {};
+model__$Components_CardTitle_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("span");
+	var _g = 0;
+	var _g1 = ["card-title"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
+	return this1;
+};
+model__$Components_CardTitle_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_CardTitle_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_CardTitle_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_CardTitle_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_CardTitle_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
 };
 var model__$Components_CardAction_$Impl_$ = {};
-model__$Components_CardAction_$Impl_$._new = function() {
+model__$Components_CardAction_$Impl_$._new = function(params) {
 	var this1 = window.document.createElement("div");
-	this1.classList.add("card-action");
+	var _g = 0;
+	var _g1 = ["card-action"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
+};
+model__$Components_CardAction_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_CardAction_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_CardAction_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_CardAction_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_CardAction_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
 };
 var model__$Components_CardImage_$Impl_$ = {};
-model__$Components_CardImage_$Impl_$._new = function(src) {
+model__$Components_CardImage_$Impl_$._new = function(params) {
 	var this1 = window.document.createElement("div");
-	this1.classList.add("card-image","waves-effect","waves-light","waves-block");
+	var _g = 0;
+	var _g1 = ["card-image","wave"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
 	var img = window.document.createElement("img");
 	img.classList.add("activator");
-	img.src = src;
+	img.src = params.src;
 	this1.appendChild(img);
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
+};
+model__$Components_CardImage_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_CardImage_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_CardImage_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_CardImage_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_CardImage_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
 };
 var model__$Components_CardStacked_$Impl_$ = {};
-model__$Components_CardStacked_$Impl_$._new = function() {
+model__$Components_CardStacked_$Impl_$._new = function(params) {
 	var this1 = window.document.createElement("div");
-	this1.classList.add("card-stacked");
+	var _g = 0;
+	var _g1 = ["card-stacked"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
+};
+model__$Components_CardStacked_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_CardStacked_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_CardStacked_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_CardStacked_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_CardStacked_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
 };
 var model__$Components_CardReveal_$Impl_$ = {};
-model__$Components_CardReveal_$Impl_$._new = function() {
+model__$Components_CardReveal_$Impl_$._new = function(params) {
 	var this1 = window.document.createElement("div");
-	this1.classList.add("card-reveal");
+	var _g = 0;
+	var _g1 = ["card-reveal"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
+};
+model__$Components_CardReveal_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_CardReveal_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_CardReveal_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_CardReveal_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_CardReveal_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
 };
 var model__$Components_CardTabs_$Impl_$ = {};
-model__$Components_CardTabs_$Impl_$._new = function() {
+model__$Components_CardTabs_$Impl_$._new = function(params) {
 	var this1 = window.document.createElement("div");
-	this1.classList.add("card-tabs");
+	var _g = 0;
+	var _g1 = ["card-tabs"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
 };
-var model__$Components_CardPanel_$Impl_$ = {};
-model__$Components_CardPanel_$Impl_$._new = function() {
-	var this1 = window.document.createElement("div");
-	this1.classList.add("card-panel");
-	return this1;
+model__$Components_CardTabs_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_CardTabs_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_CardTabs_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_CardTabs_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_CardTabs_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
 };
 var model__$Components_Tabs_$Impl_$ = {};
-model__$Components_Tabs_$Impl_$._new = function() {
-	var this1 = window.document.createElement("ul");
-	this1.classList.add("tabs");
-	return this1;
-};
 model__$Components_Tabs_$Impl_$.appendTab = function(this1,tab) {
 	this1.appendChild(tab);
 };
 model__$Components_Tabs_$Impl_$.removeTab = function(this1,tab) {
 	this1.removeChild(tab);
 };
-var model__$Components_Tab_$Impl_$ = {};
-model__$Components_Tab_$Impl_$._new = function() {
-	var this1 = window.document.createElement("li");
-	this1.classList.add("tab");
+model__$Components_Tabs_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("ul");
+	var _g = 0;
+	var _g1 = ["tabs"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
+};
+model__$Components_Tabs_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_Tabs_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_Tabs_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_Tabs_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_Tabs_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_Tab_$Impl_$ = {};
+model__$Components_Tab_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("li");
+	var _g = 0;
+	var _g1 = ["tab"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
+	return this1;
+};
+model__$Components_Tab_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_Tab_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_Tab_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_Tab_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_Tab_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
 };
 var model__$Components_ListCollection_$Impl_$ = {};
-model__$Components_ListCollection_$Impl_$._new = function() {
-	var this1 = window.document.createElement("ul");
-	this1.classList.add("collection");
-	return this1;
-};
 model__$Components_ListCollection_$Impl_$.addItem = function(this1,value) {
-	value.classList.add("collection-item");
 	this1.appendChild(value);
 };
-var model__$Components_ListCollectionItem_$Impl_$ = {};
-model__$Components_ListCollectionItem_$Impl_$._new = function() {
-	var this1 = window.document.createElement("li");
-	this1.classList.add("collection-item");
+model__$Components_ListCollection_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("ul");
+	var _g = 0;
+	var _g1 = ["componenets"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
 };
+model__$Components_ListCollection_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_ListCollection_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_ListCollection_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_ListCollection_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_ListCollection_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_ListCollectionItem_$Impl_$ = {};
 model__$Components_ListCollectionItem_$Impl_$.setSecondaryContent = function(this1,secondary) {
 	if($(this1).has("." + "secondary-content").length == 0) {
 		var div = window.document.createElement("div");
@@ -258,26 +2840,418 @@ model__$Components_ListCollectionItem_$Impl_$.setSecondaryContent = function(thi
 		this1.innerHTML = div.outerHTML;
 	}
 };
-var model__$Components_AnchorCollection_$Impl_$ = {};
-model__$Components_AnchorCollection_$Impl_$._new = function() {
-	var this1 = window.document.createElement("div");
-	this1.classList.add("collection");
+model__$Components_ListCollectionItem_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("li");
+	var _g = 0;
+	var _g1 = ["componenets-item"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
 };
+model__$Components_ListCollectionItem_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_ListCollectionItem_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_ListCollectionItem_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_ListCollectionItem_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_ListCollectionItem_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_AnchorCollection_$Impl_$ = {};
 model__$Components_AnchorCollection_$Impl_$.addItem = function(this1,value) {
-	value.classList.add("collection-item");
 	this1.appendChild(value);
 };
-var model__$Components_AnchorCollectionItem_$Impl_$ = {};
-model__$Components_AnchorCollectionItem_$Impl_$._new = function() {
-	var this1 = window.document.createElement("a");
-	this1.classList.add("collection-item");
+model__$Components_AnchorCollection_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("div");
+	var _g = 0;
+	var _g1 = ["componenets"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
 };
+model__$Components_AnchorCollection_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_AnchorCollection_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_AnchorCollection_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_AnchorCollection_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_AnchorCollection_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_AnchorCollectionItem_$Impl_$ = {};
+model__$Components_AnchorCollectionItem_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("a");
+	var _g = 0;
+	var _g1 = ["componenets-item"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
+	return this1;
+};
+model__$Components_AnchorCollectionItem_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_AnchorCollectionItem_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_AnchorCollectionItem_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_AnchorCollectionItem_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_AnchorCollectionItem_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
 var model__$Components_Icon_$Impl_$ = {};
+model__$Components_Icon_$Impl_$.changeIcon = function(this1,icon) {
+	this1.innerText = icon;
+};
 model__$Components_Icon_$Impl_$._new = function(params) {
 	var this1 = window.document.createElement("i");
-	this1.classList.add("material-icons");
+	var _g = 0;
+	var _g1 = ["material-icons","right"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
 	if(Object.prototype.hasOwnProperty.call(params,"direction")) {
 		var direction = params.direction;
 		this1.classList.remove("right","left");
@@ -287,10 +3261,84 @@ model__$Components_Icon_$Impl_$._new = function(params) {
 		this1.classList.add("right");
 	}
 	this1.innerText = params.icon;
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	return this1;
 };
-model__$Components_Icon_$Impl_$.changeIcon = function(this1,icon) {
-	this1.innerText = icon;
+model__$Components_Icon_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_Icon_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_Icon_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
 };
 model__$Components_Icon_$Impl_$.setDirection = function(this1,direction) {
 	this1.classList.remove("right","left");
@@ -302,44 +3350,396 @@ model__$Components_Icon_$Impl_$.getDirection = function(this1) {
 	}
 	return "left";
 };
-var model__$Containers_Container_$Impl_$ = {};
-model__$Containers_Container_$Impl_$._new = function() {
+var model__$Components_Container_$Impl_$ = {};
+model__$Components_Container_$Impl_$._new = function(params) {
 	var this1 = window.document.createElement("div");
-	this1.classList.add("container");
-	return this1;
-};
-var model__$Containers_Row_$Impl_$ = {};
-model__$Containers_Row_$Impl_$._new = function() {
-	var this1 = window.document.createElement("div");
-	this1.classList.add("row");
-	return this1;
-};
-var model__$Containers_Col_$Impl_$ = {};
-model__$Containers_Col_$Impl_$._new = function(classes) {
-	var this1 = window.document.createElement("div");
-	this1.classList.add("col");
-	if(classes != null) {
-		var _g = 0;
-		while(_g < classes.length) {
-			var grid = classes[_g];
-			++_g;
-			this1.classList.add(grid);
+	var _g = 0;
+	var _g1 = ["container"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
 		}
 	}
 	return this1;
+};
+model__$Components_Container_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_Container_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_Container_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_Container_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_Container_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_Row_$Impl_$ = {};
+model__$Components_Row_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("div");
+	var _g = 0;
+	var _g1 = ["row"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
+	return this1;
+};
+model__$Components_Row_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_Row_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_Row_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_Row_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_Row_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
+};
+var model__$Components_Col_$Impl_$ = {};
+model__$Components_Col_$Impl_$._new = function(params) {
+	var this1 = window.document.createElement("div");
+	var _g = 0;
+	var _g1 = ["col"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
+	return this1;
+};
+model__$Components_Col_$Impl_$.appendHtml = function(this1,value) {
+};
+model__$Components_Col_$Impl_$.setIcon = function(this1,icon) {
+	if($(this1).has("i." + "material-icons").length > 0) {
+		$(this1).find("i." + "material-icons").text(icon);
+	} else {
+		var params = { icon : icon};
+		var this2 = window.document.createElement("i");
+		var _g = 0;
+		var _g1 = ["material-icons","right"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this2.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this2.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params.html;
+					break;
+				case "text":
+					this2.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
+			var direction = params.direction;
+			this2.classList.remove("right","left");
+			this2.classList.add(direction);
+		} else {
+			this2.classList.remove("right","left");
+			this2.classList.add("right");
+		}
+		this2.innerText = params.icon;
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this2.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		this1.appendChild(this2);
+	}
+};
+model__$Components_Col_$Impl_$.getIcon = function(this1) {
+	return $(this1).find("i." + "material-icons").get(0);
+};
+model__$Components_Col_$Impl_$.setDirection = function(this1,direction) {
+	this1.classList.remove("right","left");
+	this1.classList.add(direction);
+};
+model__$Components_Col_$Impl_$.getDirection = function(this1) {
+	if(this1.classList.contains("right")) {
+		return "right";
+	}
+	return "left";
 };
 var model_macro_Macro = function() { };
 var test_Test = function() {
 	$(window.document).ready(function() {
 		M.AutoInit();
 		var this1 = window.document.createElement("div");
-		this1.classList.add("container");
+		var _g = 0;
+		var _g1 = ["container"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
+		}
 		var container = this1;
-		new test_collection_CollectionTest(container);
-		new test_collection_ButtonTest(container);
-		new test_collection_BreadcrumbTest(container);
-		new test_collection_NavbarTest(container);
-		new test_collection_CardTest(container);
+		new test_componenets_CollectionTest(container);
+		new test_componenets_ButtonTest(container);
+		new test_componenets_BreadcrumbTest(container);
+		new test_componenets_NavbarTest(container);
+		new test_componenets_CardTest(container);
 		window.document.body.appendChild(container);
 	});
 };
@@ -347,22 +3747,26 @@ test_Test.main = function() {
 	new test_Test();
 };
 var test_base_BaseTest = function(container) {
-	var classes = ["s12"];
 	var this1 = window.document.createElement("div");
-	this1.classList.add("col");
-	if(classes != null) {
-		var _g = 0;
-		while(_g < classes.length) {
-			var grid = classes[_g];
-			++_g;
-			this1.classList.add(grid);
-		}
+	var _g = 0;
+	var _g1 = ["col"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
 	}
 	this.col = this1;
 	var this11 = window.document.createElement("div");
-	this11.classList.add("row");
+	var _g2 = 0;
+	var _g11 = ["row"];
+	while(_g2 < _g11.length) {
+		var cls1 = _g11[_g2];
+		++_g2;
+		this11.classList.add(cls1);
+	}
 	this.row = this11;
 	this.container = container;
+	this.col.classList.add("s12");
 	this.row.appendChild(this.col);
 	this.container.appendChild(this.row);
 };
@@ -371,157 +3775,858 @@ test_base_BaseTest.prototype = {
 		this.container.appendChild(value);
 	}
 };
-var test_collection_BreadcrumbTest = function(container) {
+var test_componenets_BreadcrumbTest = function(container) {
 	test_base_BaseTest.call(this,container);
+	var params = { text : "Logo", direction : "right"};
 	var this1 = window.document.createElement("a");
-	this1.classList.add("brand-logo");
+	var _g = 0;
+	var _g1 = ["brand-logo"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
+	if(params != null) {
+		var _g2 = 0;
+		var _g11 = Reflect.fields(params);
+		while(_g2 < _g11.length) {
+			var field = _g11[_g2];
+			++_g2;
+			switch(field) {
+			case "elements":
+				var _g21 = 0;
+				var _g3 = Reflect.fields(params.elements);
+				while(_g21 < _g3.length) {
+					var field1 = _g3[_g21];
+					++_g21;
+					this1.appendChild(Reflect.field(params.elements,field1));
+				}
+				break;
+			case "html":
+				this1.innerHTML += params.html;
+				break;
+			case "text":
+				this1.innerText += params.text;
+				break;
+			}
+		}
+	}
+	if(params != null) {
+		if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+			var _g4 = 0;
+			var _g12 = Reflect.fields(params.classList);
+			while(_g4 < _g12.length) {
+				var field2 = _g12[_g4];
+				++_g4;
+				this1.classList.add(Reflect.field(params.classList,field2));
+			}
+		}
+	}
 	var brandLogo = this1;
-	brandLogo.textContent = "Logo";
-	brandLogo.classList.remove("right","left");
-	brandLogo.classList.add("right");
 	var headerh3 = window.document.createElement("h3");
 	headerh3.classList.add("header");
 	headerh3.innerText = "Basic";
-	var this2 = window.document.createElement("nav");
-	var nav = this2;
+	var this2 = window.document.createElement("div");
+	var _g5 = 0;
+	var _g13 = ["col"];
+	while(_g5 < _g13.length) {
+		var cls1 = _g13[_g5];
+		++_g5;
+		this2.classList.add(cls1);
+	}
+	var breadcrumbContainer = this2;
+	var params1 = { elements : [breadcrumbContainer]};
 	var this3 = window.document.createElement("div");
-	this3.classList.add("nav-wrapper");
+	var _g6 = 0;
+	var _g14 = ["nav-wrapper"];
+	while(_g6 < _g14.length) {
+		var cls2 = _g14[_g6];
+		++_g6;
+		this3.classList.add(cls2);
+	}
+	if(params1 != null) {
+		var _g7 = 0;
+		var _g15 = Reflect.fields(params1);
+		while(_g7 < _g15.length) {
+			var field3 = _g15[_g7];
+			++_g7;
+			switch(field3) {
+			case "elements":
+				var _g22 = 0;
+				var _g31 = Reflect.fields(params1.elements);
+				while(_g22 < _g31.length) {
+					var field4 = _g31[_g22];
+					++_g22;
+					this3.appendChild(Reflect.field(params1.elements,field4));
+				}
+				break;
+			case "html":
+				this3.innerHTML += params1.html;
+				break;
+			case "text":
+				this3.innerText += params1.text;
+				break;
+			}
+		}
+	}
+	if(params1 != null) {
+		if(Object.prototype.hasOwnProperty.call(params1,"classList")) {
+			var _g8 = 0;
+			var _g16 = Reflect.fields(params1.classList);
+			while(_g8 < _g16.length) {
+				var field5 = _g16[_g8];
+				++_g8;
+				this3.classList.add(Reflect.field(params1.classList,field5));
+			}
+		}
+	}
 	var wrapper = this3;
-	var this4 = window.document.createElement("div");
-	this4.classList.add("col");
-	var breadcrumbContainer = this4;
-	wrapper.appendChild(breadcrumbContainer);
+	var params2 = { elements : [wrapper]};
+	var this4 = window.document.createElement("nav");
+	var _g9 = 0;
+	var _g17 = ["nav"];
+	while(_g9 < _g17.length) {
+		var cls3 = _g17[_g9];
+		++_g9;
+		this4.classList.add(cls3);
+	}
+	if(params2 != null) {
+		var _g10 = 0;
+		var _g18 = Reflect.fields(params2);
+		while(_g10 < _g18.length) {
+			var field6 = _g18[_g10];
+			++_g10;
+			switch(field6) {
+			case "elements":
+				var _g23 = 0;
+				var _g32 = Reflect.fields(params2.elements);
+				while(_g23 < _g32.length) {
+					var field7 = _g32[_g23];
+					++_g23;
+					this4.appendChild(Reflect.field(params2.elements,field7));
+				}
+				break;
+			case "html":
+				this4.innerHTML += params2.html;
+				break;
+			case "text":
+				this4.innerText += params2.text;
+				break;
+			}
+		}
+	}
+	if(params2 != null) {
+		if(Object.prototype.hasOwnProperty.call(params2,"classList")) {
+			var _g19 = 0;
+			var _g110 = Reflect.fields(params2.classList);
+			while(_g19 < _g110.length) {
+				var field8 = _g110[_g19];
+				++_g19;
+				this4.classList.add(Reflect.field(params2.classList,field8));
+			}
+		}
+	}
+	var nav = this4;
 	var breadcrumb;
-	var _g = 0;
-	while(_g < 3) {
-		var i = _g++;
+	var _g20 = 0;
+	while(_g20 < 3) {
+		var i = _g20++;
 		var this5 = window.document.createElement("a");
-		this5.classList.add("breadcrumb");
+		var _g24 = 0;
+		var _g111 = ["breadcrumb"];
+		while(_g24 < _g111.length) {
+			var cls4 = _g111[_g24];
+			++_g24;
+			this5.classList.add(cls4);
+		}
 		breadcrumb = this5;
 		breadcrumb.textContent = "" + (i + 1) + " bread";
 		breadcrumbContainer.appendChild(breadcrumb);
 	}
-	nav.appendChild(wrapper);
 	this.col.appendChild(headerh3);
 	this.col.appendChild(nav);
 };
-test_collection_BreadcrumbTest.__super__ = test_base_BaseTest;
-test_collection_BreadcrumbTest.prototype = $extend(test_base_BaseTest.prototype,{
+test_componenets_BreadcrumbTest.__super__ = test_base_BaseTest;
+test_componenets_BreadcrumbTest.prototype = $extend(test_base_BaseTest.prototype,{
 });
-var test_collection_ButtonTest = function(container) {
+var test_componenets_ButtonTest = function(container) {
 	test_base_BaseTest.call(this,container);
 	this.raisedButton();
 	this.floatingButton();
 	this.submitButton();
 };
-test_collection_ButtonTest.__super__ = test_base_BaseTest;
-test_collection_ButtonTest.prototype = $extend(test_base_BaseTest.prototype,{
+test_componenets_ButtonTest.__super__ = test_base_BaseTest;
+test_componenets_ButtonTest.prototype = $extend(test_base_BaseTest.prototype,{
 	raisedButton: function() {
-		var this1 = window.document.createElement("div");
-		this1.classList.add("row");
-		var raisedRow = this1;
-		var this2 = window.document.createElement("a");
-		this2.classList.add("waves-effect","waves-light","btn");
-		this2.classList.add("btn");
-		var raisedNormal = this2;
+		var params = { text : "NORMAL"};
+		var this1 = window.document.createElement("a");
+		var _g = 0;
+		var _g1 = ["btn","waves-effect","waves-light"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this1.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this1.innerHTML += params.html;
+					break;
+				case "text":
+					this1.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"icon")) {
+			var params1 = { icon : params.icon, direction : params.direction != null ? params.direction : "right"};
+			var this2 = window.document.createElement("i");
+			var _g4 = 0;
+			var _g12 = ["material-icons","right"];
+			while(_g4 < _g12.length) {
+				var cls1 = _g12[_g4];
+				++_g4;
+				this2.classList.add(cls1);
+			}
+			if(params1 != null) {
+				var _g5 = 0;
+				var _g13 = Reflect.fields(params1);
+				while(_g5 < _g13.length) {
+					var field2 = _g13[_g5];
+					++_g5;
+					switch(field2) {
+					case "elements":
+						var _g22 = 0;
+						var _g31 = Reflect.fields(params1.elements);
+						while(_g22 < _g31.length) {
+							var field3 = _g31[_g22];
+							++_g22;
+							this2.appendChild(Reflect.field(params1.elements,field3));
+						}
+						break;
+					case "html":
+						this2.innerHTML += params1.html;
+						break;
+					case "text":
+						this2.innerText += params1.text;
+						break;
+					}
+				}
+			}
+			if(Object.prototype.hasOwnProperty.call(params1,"direction")) {
+				var direction = params1.direction;
+				this2.classList.remove("right","left");
+				this2.classList.add(direction);
+			} else {
+				this2.classList.remove("right","left");
+				this2.classList.add("right");
+			}
+			this2.innerText = params1.icon;
+			if(params1 != null) {
+				if(Object.prototype.hasOwnProperty.call(params1,"classList")) {
+					var _g6 = 0;
+					var _g14 = Reflect.fields(params1.classList);
+					while(_g6 < _g14.length) {
+						var field4 = _g14[_g6];
+						++_g6;
+						this2.classList.add(Reflect.field(params1.classList,field4));
+					}
+				}
+			}
+			this1.appendChild(this2);
+		}
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g7 = 0;
+				var _g15 = Reflect.fields(params.classList);
+				while(_g7 < _g15.length) {
+					var field5 = _g15[_g7];
+					++_g7;
+					this1.classList.add(Reflect.field(params.classList,field5));
+				}
+			}
+		}
+		var raisedNormal = this1;
+		var params2 = { icon : "cloud", text : "LEFT ICON", direction : "left"};
 		var this3 = window.document.createElement("a");
-		this3.classList.add("waves-effect","waves-light","btn");
-		this3.classList.add("btn");
+		var _g8 = 0;
+		var _g16 = ["btn","waves-effect","waves-light"];
+		while(_g8 < _g16.length) {
+			var cls2 = _g16[_g8];
+			++_g8;
+			this3.classList.add(cls2);
+		}
+		if(params2 != null) {
+			var _g9 = 0;
+			var _g17 = Reflect.fields(params2);
+			while(_g9 < _g17.length) {
+				var field6 = _g17[_g9];
+				++_g9;
+				switch(field6) {
+				case "elements":
+					var _g23 = 0;
+					var _g32 = Reflect.fields(params2.elements);
+					while(_g23 < _g32.length) {
+						var field7 = _g32[_g23];
+						++_g23;
+						this3.appendChild(Reflect.field(params2.elements,field7));
+					}
+					break;
+				case "html":
+					this3.innerHTML += params2.html;
+					break;
+				case "text":
+					this3.innerText += params2.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params2,"icon")) {
+			var params3 = { icon : params2.icon, direction : params2.direction != null ? params2.direction : "right"};
+			var this4 = window.document.createElement("i");
+			var _g10 = 0;
+			var _g18 = ["material-icons","right"];
+			while(_g10 < _g18.length) {
+				var cls3 = _g18[_g10];
+				++_g10;
+				this4.classList.add(cls3);
+			}
+			if(params3 != null) {
+				var _g19 = 0;
+				var _g110 = Reflect.fields(params3);
+				while(_g19 < _g110.length) {
+					var field8 = _g110[_g19];
+					++_g19;
+					switch(field8) {
+					case "elements":
+						var _g24 = 0;
+						var _g33 = Reflect.fields(params3.elements);
+						while(_g24 < _g33.length) {
+							var field9 = _g33[_g24];
+							++_g24;
+							this4.appendChild(Reflect.field(params3.elements,field9));
+						}
+						break;
+					case "html":
+						this4.innerHTML += params3.html;
+						break;
+					case "text":
+						this4.innerText += params3.text;
+						break;
+					}
+				}
+			}
+			if(Object.prototype.hasOwnProperty.call(params3,"direction")) {
+				var direction1 = params3.direction;
+				this4.classList.remove("right","left");
+				this4.classList.add(direction1);
+			} else {
+				this4.classList.remove("right","left");
+				this4.classList.add("right");
+			}
+			this4.innerText = params3.icon;
+			if(params3 != null) {
+				if(Object.prototype.hasOwnProperty.call(params3,"classList")) {
+					var _g20 = 0;
+					var _g111 = Reflect.fields(params3.classList);
+					while(_g20 < _g111.length) {
+						var field10 = _g111[_g20];
+						++_g20;
+						this4.classList.add(Reflect.field(params3.classList,field10));
+					}
+				}
+			}
+			this3.appendChild(this4);
+		}
+		if(params2 != null) {
+			if(Object.prototype.hasOwnProperty.call(params2,"classList")) {
+				var _g25 = 0;
+				var _g112 = Reflect.fields(params2.classList);
+				while(_g25 < _g112.length) {
+					var field11 = _g112[_g25];
+					++_g25;
+					this3.classList.add(Reflect.field(params2.classList,field11));
+				}
+			}
+		}
 		var raisedButtonIconLeft = this3;
-		var this4 = window.document.createElement("a");
-		this4.classList.add("waves-effect","waves-light","btn");
-		this4.classList.add("btn");
-		var raisedButtonIconRight = this4;
-		raisedNormal.text = raisedButtonIconLeft.text = raisedButtonIconRight.text = "BUTTON";
-		var params = { icon : "cloud", direction : "left"};
-		var this5 = window.document.createElement("i");
-		this5.classList.add("material-icons");
-		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
-			var direction = params.direction;
-			this5.classList.remove("right","left");
-			this5.classList.add(direction);
-		} else {
-			this5.classList.remove("right","left");
-			this5.classList.add("right");
+		var params4 = { icon : "cloud", text : "RIGHT ICON", direction : "right"};
+		var this5 = window.document.createElement("a");
+		var _g26 = 0;
+		var _g113 = ["btn","waves-effect","waves-light"];
+		while(_g26 < _g113.length) {
+			var cls4 = _g113[_g26];
+			++_g26;
+			this5.classList.add(cls4);
 		}
-		this5.innerText = params.icon;
-		model__$Components_RaisedButton_$Impl_$.setIcon(raisedButtonIconLeft,this5);
-		var params1 = { icon : "cloud", direction : "right"};
-		var this6 = window.document.createElement("i");
-		this6.classList.add("material-icons");
-		if(Object.prototype.hasOwnProperty.call(params1,"direction")) {
-			var direction1 = params1.direction;
-			this6.classList.remove("right","left");
-			this6.classList.add(direction1);
-		} else {
-			this6.classList.remove("right","left");
-			this6.classList.add("right");
+		if(params4 != null) {
+			var _g27 = 0;
+			var _g114 = Reflect.fields(params4);
+			while(_g27 < _g114.length) {
+				var field12 = _g114[_g27];
+				++_g27;
+				switch(field12) {
+				case "elements":
+					var _g28 = 0;
+					var _g34 = Reflect.fields(params4.elements);
+					while(_g28 < _g34.length) {
+						var field13 = _g34[_g28];
+						++_g28;
+						this5.appendChild(Reflect.field(params4.elements,field13));
+					}
+					break;
+				case "html":
+					this5.innerHTML += params4.html;
+					break;
+				case "text":
+					this5.innerText += params4.text;
+					break;
+				}
+			}
 		}
-		this6.innerText = params1.icon;
-		model__$Components_RaisedButton_$Impl_$.setIcon(raisedButtonIconRight,this6);
-		raisedRow.appendChild(raisedNormal);
-		raisedRow.appendChild(raisedButtonIconLeft);
-		raisedRow.appendChild(raisedButtonIconRight);
-		this.col.appendChild(raisedRow);
+		if(Object.prototype.hasOwnProperty.call(params4,"icon")) {
+			var params5 = { icon : params4.icon, direction : params4.direction != null ? params4.direction : "right"};
+			var this6 = window.document.createElement("i");
+			var _g29 = 0;
+			var _g115 = ["material-icons","right"];
+			while(_g29 < _g115.length) {
+				var cls5 = _g115[_g29];
+				++_g29;
+				this6.classList.add(cls5);
+			}
+			if(params5 != null) {
+				var _g30 = 0;
+				var _g116 = Reflect.fields(params5);
+				while(_g30 < _g116.length) {
+					var field14 = _g116[_g30];
+					++_g30;
+					switch(field14) {
+					case "elements":
+						var _g210 = 0;
+						var _g35 = Reflect.fields(params5.elements);
+						while(_g210 < _g35.length) {
+							var field15 = _g35[_g210];
+							++_g210;
+							this6.appendChild(Reflect.field(params5.elements,field15));
+						}
+						break;
+					case "html":
+						this6.innerHTML += params5.html;
+						break;
+					case "text":
+						this6.innerText += params5.text;
+						break;
+					}
+				}
+			}
+			if(Object.prototype.hasOwnProperty.call(params5,"direction")) {
+				var direction2 = params5.direction;
+				this6.classList.remove("right","left");
+				this6.classList.add(direction2);
+			} else {
+				this6.classList.remove("right","left");
+				this6.classList.add("right");
+			}
+			this6.innerText = params5.icon;
+			if(params5 != null) {
+				if(Object.prototype.hasOwnProperty.call(params5,"classList")) {
+					var _g36 = 0;
+					var _g117 = Reflect.fields(params5.classList);
+					while(_g36 < _g117.length) {
+						var field16 = _g117[_g36];
+						++_g36;
+						this6.classList.add(Reflect.field(params5.classList,field16));
+					}
+				}
+			}
+			this5.appendChild(this6);
+		}
+		if(params4 != null) {
+			if(Object.prototype.hasOwnProperty.call(params4,"classList")) {
+				var _g37 = 0;
+				var _g118 = Reflect.fields(params4.classList);
+				while(_g37 < _g118.length) {
+					var field17 = _g118[_g37];
+					++_g37;
+					this5.classList.add(Reflect.field(params4.classList,field17));
+				}
+			}
+		}
+		var raisedButtonIconRight = this5;
+		raisedButtonIconLeft.onmousedown = function() {
+			model__$Components_RaisedButton_$Impl_$.setIcon(raisedButtonIconLeft,"airplanemode_inactive");
+		};
+		raisedButtonIconLeft.onmouseup = function() {
+			model__$Components_RaisedButton_$Impl_$.setIcon(raisedButtonIconLeft,"cloud");
+		};
+		var tmp = this.col;
+		var params6 = { elements : [raisedNormal,raisedButtonIconLeft,raisedButtonIconRight]};
+		var this7 = window.document.createElement("div");
+		var _g38 = 0;
+		var _g119 = ["row"];
+		while(_g38 < _g119.length) {
+			var cls6 = _g119[_g38];
+			++_g38;
+			this7.classList.add(cls6);
+		}
+		if(params6 != null) {
+			var _g39 = 0;
+			var _g120 = Reflect.fields(params6);
+			while(_g39 < _g120.length) {
+				var field18 = _g120[_g39];
+				++_g39;
+				switch(field18) {
+				case "elements":
+					var _g211 = 0;
+					var _g310 = Reflect.fields(params6.elements);
+					while(_g211 < _g310.length) {
+						var field19 = _g310[_g211];
+						++_g211;
+						this7.appendChild(Reflect.field(params6.elements,field19));
+					}
+					break;
+				case "html":
+					this7.innerHTML += params6.html;
+					break;
+				case "text":
+					this7.innerText += params6.text;
+					break;
+				}
+			}
+		}
+		if(params6 != null) {
+			if(Object.prototype.hasOwnProperty.call(params6,"classList")) {
+				var _g40 = 0;
+				var _g121 = Reflect.fields(params6.classList);
+				while(_g40 < _g121.length) {
+					var field20 = _g121[_g40];
+					++_g40;
+					this7.classList.add(Reflect.field(params6.classList,field20));
+				}
+			}
+		}
+		tmp.appendChild(this7);
 	}
 	,floatingButton: function() {
-		var this1 = window.document.createElement("div");
-		this1.classList.add("row");
-		var floatingRow = this1;
-		var this2 = window.document.createElement("a");
-		this2.classList.add("btn-floating","waves-effect","waves-light","red");
-		this2.classList.add("btn");
-		var floatingButton = this2;
-		var params = { icon : "add"};
-		var this3 = window.document.createElement("i");
-		this3.classList.add("material-icons");
-		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
-			var direction = params.direction;
-			this3.classList.remove("right","left");
-			this3.classList.add(direction);
-		} else {
-			this3.classList.remove("right","left");
-			this3.classList.add("right");
+		var params = { icon : "account_balance_wallet"};
+		var this1 = window.document.createElement("a");
+		var _g = 0;
+		var _g1 = ["red","btn-floating","waves-effect","waves-light"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
 		}
-		this3.innerText = params.icon;
-		model__$Components_FloatingButton_$Impl_$.setIcon(floatingButton,this3);
-		floatingRow.appendChild(floatingButton);
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this1.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this1.innerHTML += params.html;
+					break;
+				case "text":
+					this1.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params,"icon")) {
+			var params1 = { icon : params.icon, direction : params.direction != null ? params.direction : "right"};
+			var this2 = window.document.createElement("i");
+			var _g4 = 0;
+			var _g12 = ["material-icons","right"];
+			while(_g4 < _g12.length) {
+				var cls1 = _g12[_g4];
+				++_g4;
+				this2.classList.add(cls1);
+			}
+			if(params1 != null) {
+				var _g5 = 0;
+				var _g13 = Reflect.fields(params1);
+				while(_g5 < _g13.length) {
+					var field2 = _g13[_g5];
+					++_g5;
+					switch(field2) {
+					case "elements":
+						var _g22 = 0;
+						var _g31 = Reflect.fields(params1.elements);
+						while(_g22 < _g31.length) {
+							var field3 = _g31[_g22];
+							++_g22;
+							this2.appendChild(Reflect.field(params1.elements,field3));
+						}
+						break;
+					case "html":
+						this2.innerHTML += params1.html;
+						break;
+					case "text":
+						this2.innerText += params1.text;
+						break;
+					}
+				}
+			}
+			if(Object.prototype.hasOwnProperty.call(params1,"direction")) {
+				var direction = params1.direction;
+				this2.classList.remove("right","left");
+				this2.classList.add(direction);
+			} else {
+				this2.classList.remove("right","left");
+				this2.classList.add("right");
+			}
+			this2.innerText = params1.icon;
+			if(params1 != null) {
+				if(Object.prototype.hasOwnProperty.call(params1,"classList")) {
+					var _g6 = 0;
+					var _g14 = Reflect.fields(params1.classList);
+					while(_g6 < _g14.length) {
+						var field4 = _g14[_g6];
+						++_g6;
+						this2.classList.add(Reflect.field(params1.classList,field4));
+					}
+				}
+			}
+			this1.appendChild(this2);
+		}
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g7 = 0;
+				var _g15 = Reflect.fields(params.classList);
+				while(_g7 < _g15.length) {
+					var field5 = _g15[_g7];
+					++_g7;
+					this1.classList.add(Reflect.field(params.classList,field5));
+				}
+			}
+		}
+		var params2 = { elements : [this1]};
+		var this3 = window.document.createElement("div");
+		var _g8 = 0;
+		var _g16 = ["row"];
+		while(_g8 < _g16.length) {
+			var cls2 = _g16[_g8];
+			++_g8;
+			this3.classList.add(cls2);
+		}
+		if(params2 != null) {
+			var _g9 = 0;
+			var _g17 = Reflect.fields(params2);
+			while(_g9 < _g17.length) {
+				var field6 = _g17[_g9];
+				++_g9;
+				switch(field6) {
+				case "elements":
+					var _g23 = 0;
+					var _g32 = Reflect.fields(params2.elements);
+					while(_g23 < _g32.length) {
+						var field7 = _g32[_g23];
+						++_g23;
+						this3.appendChild(Reflect.field(params2.elements,field7));
+					}
+					break;
+				case "html":
+					this3.innerHTML += params2.html;
+					break;
+				case "text":
+					this3.innerText += params2.text;
+					break;
+				}
+			}
+		}
+		if(params2 != null) {
+			if(Object.prototype.hasOwnProperty.call(params2,"classList")) {
+				var _g10 = 0;
+				var _g18 = Reflect.fields(params2.classList);
+				while(_g10 < _g18.length) {
+					var field8 = _g18[_g10];
+					++_g10;
+					this3.classList.add(Reflect.field(params2.classList,field8));
+				}
+			}
+		}
+		var floatingRow = this3;
 		this.col.appendChild(floatingRow);
 	}
 	,submitButton: function() {
-		var this1 = window.document.createElement("div");
-		this1.classList.add("row");
-		var submitRow = this1;
-		var properties = { type : "btn-small"};
-		var this2 = window.document.createElement("button");
-		this2.classList.add("waves-effect","waves-light");
-		this2.type = "submit";
-		this2.name = "action";
-		if(properties != null) {
-			this2.classList.add(Object.prototype.hasOwnProperty.call(properties,"type") ? properties.type : "btn");
-		} else {
-			this2.classList.add("btn");
+		var params = { text : "Submit", icon : "send"};
+		var this1 = window.document.createElement("button");
+		var _g = 0;
+		var _g1 = ["waves-effect","waves-light","btn"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
 		}
-		var submitButton = this2;
-		submitButton.textContent = "Submit";
-		var params = { icon : "send"};
-		var this3 = window.document.createElement("i");
-		this3.classList.add("material-icons");
-		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
-			var direction = params.direction;
-			this3.classList.remove("right","left");
-			this3.classList.add(direction);
-		} else {
-			this3.classList.remove("right","left");
-			this3.classList.add("right");
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this1.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this1.innerHTML += params.html;
+					break;
+				case "text":
+					this1.innerText += params.text;
+					break;
+				}
+			}
 		}
-		this3.innerText = params.icon;
-		model__$Components_SubmitButton_$Impl_$.setIcon(submitButton,this3);
-		submitRow.appendChild(submitButton);
+		if(Object.prototype.hasOwnProperty.call(params,"icon")) {
+			var params1 = { icon : params.icon, direction : params.direction != null ? params.direction : "right"};
+			var this2 = window.document.createElement("i");
+			var _g4 = 0;
+			var _g12 = ["material-icons","right"];
+			while(_g4 < _g12.length) {
+				var cls1 = _g12[_g4];
+				++_g4;
+				this2.classList.add(cls1);
+			}
+			if(params1 != null) {
+				var _g5 = 0;
+				var _g13 = Reflect.fields(params1);
+				while(_g5 < _g13.length) {
+					var field2 = _g13[_g5];
+					++_g5;
+					switch(field2) {
+					case "elements":
+						var _g22 = 0;
+						var _g31 = Reflect.fields(params1.elements);
+						while(_g22 < _g31.length) {
+							var field3 = _g31[_g22];
+							++_g22;
+							this2.appendChild(Reflect.field(params1.elements,field3));
+						}
+						break;
+					case "html":
+						this2.innerHTML += params1.html;
+						break;
+					case "text":
+						this2.innerText += params1.text;
+						break;
+					}
+				}
+			}
+			if(Object.prototype.hasOwnProperty.call(params1,"direction")) {
+				var direction = params1.direction;
+				this2.classList.remove("right","left");
+				this2.classList.add(direction);
+			} else {
+				this2.classList.remove("right","left");
+				this2.classList.add("right");
+			}
+			this2.innerText = params1.icon;
+			if(params1 != null) {
+				if(Object.prototype.hasOwnProperty.call(params1,"classList")) {
+					var _g6 = 0;
+					var _g14 = Reflect.fields(params1.classList);
+					while(_g6 < _g14.length) {
+						var field4 = _g14[_g6];
+						++_g6;
+						this2.classList.add(Reflect.field(params1.classList,field4));
+					}
+				}
+			}
+			this1.appendChild(this2);
+		}
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g7 = 0;
+				var _g15 = Reflect.fields(params.classList);
+				while(_g7 < _g15.length) {
+					var field5 = _g15[_g7];
+					++_g7;
+					this1.classList.add(Reflect.field(params.classList,field5));
+				}
+			}
+		}
+		this1.type = "submit";
+		this1.name = "action";
+		var params2 = { elements : [this1]};
+		var this3 = window.document.createElement("div");
+		var _g8 = 0;
+		var _g16 = ["row"];
+		while(_g8 < _g16.length) {
+			var cls2 = _g16[_g8];
+			++_g8;
+			this3.classList.add(cls2);
+		}
+		if(params2 != null) {
+			var _g9 = 0;
+			var _g17 = Reflect.fields(params2);
+			while(_g9 < _g17.length) {
+				var field6 = _g17[_g9];
+				++_g9;
+				switch(field6) {
+				case "elements":
+					var _g23 = 0;
+					var _g32 = Reflect.fields(params2.elements);
+					while(_g23 < _g32.length) {
+						var field7 = _g32[_g23];
+						++_g23;
+						this3.appendChild(Reflect.field(params2.elements,field7));
+					}
+					break;
+				case "html":
+					this3.innerHTML += params2.html;
+					break;
+				case "text":
+					this3.innerText += params2.text;
+					break;
+				}
+			}
+		}
+		if(params2 != null) {
+			if(Object.prototype.hasOwnProperty.call(params2,"classList")) {
+				var _g10 = 0;
+				var _g18 = Reflect.fields(params2.classList);
+				while(_g10 < _g18.length) {
+					var field8 = _g18[_g10];
+					++_g10;
+					this3.classList.add(Reflect.field(params2.classList,field8));
+				}
+			}
+		}
+		var submitRow = this3;
 		this.col.appendChild(submitRow);
 	}
 });
-var test_collection_CardTest = function(container) {
+var test_componenets_CardTest = function(container) {
 	test_base_BaseTest.call(this,container);
 	this.basicCard();
 	this.imageCard();
@@ -531,41 +4636,205 @@ var test_collection_CardTest = function(container) {
 	this.revealCardStickyAction();
 	this.cardTabs();
 };
-test_collection_CardTest.__super__ = test_base_BaseTest;
-test_collection_CardTest.prototype = $extend(test_base_BaseTest.prototype,{
+test_componenets_CardTest.__super__ = test_base_BaseTest;
+test_componenets_CardTest.prototype = $extend(test_base_BaseTest.prototype,{
 	basicCard: function() {
-		var classes = ["s12","m4"];
+		var params = { classList : ["s12","m4"]};
 		var this1 = window.document.createElement("div");
-		this1.classList.add("col");
-		if(classes != null) {
-			var _g = 0;
-			while(_g < classes.length) {
-				var grid = classes[_g];
-				++_g;
-				this1.classList.add(grid);
+		var _g = 0;
+		var _g1 = ["col"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this1.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this1.innerHTML += params.html;
+					break;
+				case "text":
+					this1.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this1.classList.add(Reflect.field(params.classList,field2));
+				}
 			}
 		}
 		var innerCol = this1;
+		var params1 = { classList : ["blue-grey","darken-1"]};
 		var this2 = window.document.createElement("div");
-		this2.classList.add("card");
+		var _g5 = 0;
+		var _g13 = ["card"];
+		while(_g5 < _g13.length) {
+			var cls1 = _g13[_g5];
+			++_g5;
+			this2.classList.add(cls1);
+		}
+		if(params1 != null) {
+			var _g6 = 0;
+			var _g14 = Reflect.fields(params1);
+			while(_g6 < _g14.length) {
+				var field3 = _g14[_g6];
+				++_g6;
+				switch(field3) {
+				case "elements":
+					var _g22 = 0;
+					var _g31 = Reflect.fields(params1.elements);
+					while(_g22 < _g31.length) {
+						var field4 = _g31[_g22];
+						++_g22;
+						this2.appendChild(Reflect.field(params1.elements,field4));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params1.html;
+					break;
+				case "text":
+					this2.innerText += params1.text;
+					break;
+				}
+			}
+		}
+		if(params1 != null) {
+			if(Object.prototype.hasOwnProperty.call(params1,"classList")) {
+				var _g7 = 0;
+				var _g15 = Reflect.fields(params1.classList);
+				while(_g7 < _g15.length) {
+					var field5 = _g15[_g7];
+					++_g7;
+					this2.classList.add(Reflect.field(params1.classList,field5));
+				}
+			}
+		}
 		var card = this2;
-		card.classList.add("blue-grey","darken-1");
-		var this3;
-		var i = window.document.createElement("div");
-		this3 = window.document.createElement("div");
-		this3.classList.add("card-content");
+		var this3 = window.document.createElement("div");
+		var _g8 = 0;
+		var _g16 = ["card-content"];
+		while(_g8 < _g16.length) {
+			var cls2 = _g16[_g8];
+			++_g8;
+			this3.classList.add(cls2);
+		}
 		var cardContent = this3;
 		cardContent.classList.add("white-text");
+		var params2 = { text : "Card Title"};
 		var this4 = window.document.createElement("span");
-		this4.classList.add("card-title");
-		this4.innerHTML = "Card Title";
+		var _g9 = 0;
+		var _g17 = ["card-title"];
+		while(_g9 < _g17.length) {
+			var cls3 = _g17[_g9];
+			++_g9;
+			this4.classList.add(cls3);
+		}
+		if(params2 != null) {
+			var _g10 = 0;
+			var _g18 = Reflect.fields(params2);
+			while(_g10 < _g18.length) {
+				var field6 = _g18[_g10];
+				++_g10;
+				switch(field6) {
+				case "elements":
+					var _g23 = 0;
+					var _g32 = Reflect.fields(params2.elements);
+					while(_g23 < _g32.length) {
+						var field7 = _g32[_g23];
+						++_g23;
+						this4.appendChild(Reflect.field(params2.elements,field7));
+					}
+					break;
+				case "html":
+					this4.innerHTML += params2.html;
+					break;
+				case "text":
+					this4.innerText += params2.text;
+					break;
+				}
+			}
+		}
+		if(params2 != null) {
+			if(Object.prototype.hasOwnProperty.call(params2,"classList")) {
+				var _g19 = 0;
+				var _g110 = Reflect.fields(params2.classList);
+				while(_g19 < _g110.length) {
+					var field8 = _g110[_g19];
+					++_g19;
+					this4.classList.add(Reflect.field(params2.classList,field8));
+				}
+			}
+		}
 		var cardTitle = this4;
 		var paragraph = window.document.createElement("p");
 		paragraph.textContent = "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.";
+		var params3 = { html : "<a href=\"#\">666 is a link</a><a href=\"#\">This is a link</a>"};
 		var this5 = window.document.createElement("div");
-		this5.classList.add("card-action");
+		var _g20 = 0;
+		var _g111 = ["card-action"];
+		while(_g20 < _g111.length) {
+			var cls4 = _g111[_g20];
+			++_g20;
+			this5.classList.add(cls4);
+		}
+		if(params3 != null) {
+			var _g24 = 0;
+			var _g112 = Reflect.fields(params3);
+			while(_g24 < _g112.length) {
+				var field9 = _g112[_g24];
+				++_g24;
+				switch(field9) {
+				case "elements":
+					var _g25 = 0;
+					var _g33 = Reflect.fields(params3.elements);
+					while(_g25 < _g33.length) {
+						var field10 = _g33[_g25];
+						++_g25;
+						this5.appendChild(Reflect.field(params3.elements,field10));
+					}
+					break;
+				case "html":
+					this5.innerHTML += params3.html;
+					break;
+				case "text":
+					this5.innerText += params3.text;
+					break;
+				}
+			}
+		}
+		if(params3 != null) {
+			if(Object.prototype.hasOwnProperty.call(params3,"classList")) {
+				var _g26 = 0;
+				var _g113 = Reflect.fields(params3.classList);
+				while(_g26 < _g113.length) {
+					var field11 = _g113[_g26];
+					++_g26;
+					this5.classList.add(Reflect.field(params3.classList,field11));
+				}
+			}
+		}
 		var cardAction = this5;
-		cardAction.innerHTML = "<a href=\"#\">This is a link</a><a href=\"#\">This is a link</a>";
 		cardContent.appendChild(cardTitle);
 		cardContent.appendChild(paragraph);
 		card.appendChild(cardContent);
@@ -574,45 +4843,250 @@ test_collection_CardTest.prototype = $extend(test_base_BaseTest.prototype,{
 		this.col.appendChild(innerCol);
 	}
 	,imageCard: function() {
-		var classes = ["s12","m4"];
+		var params = { classList : ["s12","m4"]};
 		var this1 = window.document.createElement("div");
-		this1.classList.add("col");
-		if(classes != null) {
-			var _g = 0;
-			while(_g < classes.length) {
-				var grid = classes[_g];
-				++_g;
-				this1.classList.add(grid);
+		var _g = 0;
+		var _g1 = ["col"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this1.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this1.innerHTML += params.html;
+					break;
+				case "text":
+					this1.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this1.classList.add(Reflect.field(params.classList,field2));
+				}
 			}
 		}
 		var innerCol = this1;
 		var this2 = window.document.createElement("div");
-		this2.classList.add("card");
+		var _g5 = 0;
+		var _g13 = ["card"];
+		while(_g5 < _g13.length) {
+			var cls1 = _g13[_g5];
+			++_g5;
+			this2.classList.add(cls1);
+		}
 		var card = this2;
+		var params1 = { src : "https://materializecss.com/images/sample-1.jpg"};
 		var this3 = window.document.createElement("div");
-		this3.classList.add("card-image","waves-effect","waves-light","waves-block");
+		var _g6 = 0;
+		var _g14 = ["card-image","wave"];
+		while(_g6 < _g14.length) {
+			var cls2 = _g14[_g6];
+			++_g6;
+			this3.classList.add(cls2);
+		}
+		if(params1 != null) {
+			var _g7 = 0;
+			var _g15 = Reflect.fields(params1);
+			while(_g7 < _g15.length) {
+				var field3 = _g15[_g7];
+				++_g7;
+				switch(field3) {
+				case "elements":
+					var _g22 = 0;
+					var _g31 = Reflect.fields(params1.elements);
+					while(_g22 < _g31.length) {
+						var field4 = _g31[_g22];
+						++_g22;
+						this3.appendChild(Reflect.field(params1.elements,field4));
+					}
+					break;
+				case "html":
+					this3.innerHTML += params1.html;
+					break;
+				case "text":
+					this3.innerText += params1.text;
+					break;
+				}
+			}
+		}
 		var img = window.document.createElement("img");
 		img.classList.add("activator");
-		img.src = "https://materializecss.com/images/sample-1.jpg";
+		img.src = params1.src;
 		this3.appendChild(img);
+		if(params1 != null) {
+			if(Object.prototype.hasOwnProperty.call(params1,"classList")) {
+				var _g8 = 0;
+				var _g16 = Reflect.fields(params1.classList);
+				while(_g8 < _g16.length) {
+					var field5 = _g16[_g8];
+					++_g8;
+					this3.classList.add(Reflect.field(params1.classList,field5));
+				}
+			}
+		}
 		var cardImage = this3;
+		var params2 = { text : "Card Title"};
 		var this4 = window.document.createElement("span");
-		this4.classList.add("card-title");
-		this4.innerHTML = "Card Title";
+		var _g9 = 0;
+		var _g17 = ["card-title"];
+		while(_g9 < _g17.length) {
+			var cls3 = _g17[_g9];
+			++_g9;
+			this4.classList.add(cls3);
+		}
+		if(params2 != null) {
+			var _g10 = 0;
+			var _g18 = Reflect.fields(params2);
+			while(_g10 < _g18.length) {
+				var field6 = _g18[_g10];
+				++_g10;
+				switch(field6) {
+				case "elements":
+					var _g23 = 0;
+					var _g32 = Reflect.fields(params2.elements);
+					while(_g23 < _g32.length) {
+						var field7 = _g32[_g23];
+						++_g23;
+						this4.appendChild(Reflect.field(params2.elements,field7));
+					}
+					break;
+				case "html":
+					this4.innerHTML += params2.html;
+					break;
+				case "text":
+					this4.innerText += params2.text;
+					break;
+				}
+			}
+		}
+		if(params2 != null) {
+			if(Object.prototype.hasOwnProperty.call(params2,"classList")) {
+				var _g19 = 0;
+				var _g110 = Reflect.fields(params2.classList);
+				while(_g19 < _g110.length) {
+					var field8 = _g110[_g19];
+					++_g19;
+					this4.classList.add(Reflect.field(params2.classList,field8));
+				}
+			}
+		}
 		var cardTitle = this4;
-		var this5;
-		var i = window.document.createElement("div");
-		this5 = window.document.createElement("div");
-		this5.classList.add("card-content");
+		var params3 = { html : "<p>I am a very simple card. I a good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>"};
+		var this5 = window.document.createElement("div");
+		var _g20 = 0;
+		var _g111 = ["card-content"];
+		while(_g20 < _g111.length) {
+			var cls4 = _g111[_g20];
+			++_g20;
+			this5.classList.add(cls4);
+		}
+		if(params3 != null) {
+			var _g24 = 0;
+			var _g112 = Reflect.fields(params3);
+			while(_g24 < _g112.length) {
+				var field9 = _g112[_g24];
+				++_g24;
+				switch(field9) {
+				case "elements":
+					var _g25 = 0;
+					var _g33 = Reflect.fields(params3.elements);
+					while(_g25 < _g33.length) {
+						var field10 = _g33[_g25];
+						++_g25;
+						this5.appendChild(Reflect.field(params3.elements,field10));
+					}
+					break;
+				case "html":
+					this5.innerHTML += params3.html;
+					break;
+				case "text":
+					this5.innerText += params3.text;
+					break;
+				}
+			}
+		}
+		if(params3 != null) {
+			if(Object.prototype.hasOwnProperty.call(params3,"classList")) {
+				var _g26 = 0;
+				var _g113 = Reflect.fields(params3.classList);
+				while(_g26 < _g113.length) {
+					var field11 = _g113[_g26];
+					++_g26;
+					this5.classList.add(Reflect.field(params3.classList,field11));
+				}
+			}
+		}
 		var cardContent = this5;
-		var paragraph = window.document.createElement("p");
-		paragraph.innerText = "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.";
+		var params4 = { html : "<a href=\"#\">This is a link</a>"};
 		var this6 = window.document.createElement("div");
-		this6.classList.add("card-action");
+		var _g27 = 0;
+		var _g114 = ["card-action"];
+		while(_g27 < _g114.length) {
+			var cls5 = _g114[_g27];
+			++_g27;
+			this6.classList.add(cls5);
+		}
+		if(params4 != null) {
+			var _g28 = 0;
+			var _g115 = Reflect.fields(params4);
+			while(_g28 < _g115.length) {
+				var field12 = _g115[_g28];
+				++_g28;
+				switch(field12) {
+				case "elements":
+					var _g29 = 0;
+					var _g34 = Reflect.fields(params4.elements);
+					while(_g29 < _g34.length) {
+						var field13 = _g34[_g29];
+						++_g29;
+						this6.appendChild(Reflect.field(params4.elements,field13));
+					}
+					break;
+				case "html":
+					this6.innerHTML += params4.html;
+					break;
+				case "text":
+					this6.innerText += params4.text;
+					break;
+				}
+			}
+		}
+		if(params4 != null) {
+			if(Object.prototype.hasOwnProperty.call(params4,"classList")) {
+				var _g30 = 0;
+				var _g116 = Reflect.fields(params4.classList);
+				while(_g30 < _g116.length) {
+					var field14 = _g116[_g30];
+					++_g30;
+					this6.classList.add(Reflect.field(params4.classList,field14));
+				}
+			}
+		}
 		var cardAction = this6;
-		cardAction.innerHTML = "<a href=\"#\">This is a link</a>";
 		cardImage.appendChild(cardTitle);
-		cardContent.appendChild(paragraph);
 		card.appendChild(cardImage);
 		card.appendChild(cardContent);
 		card.appendChild(cardAction);
@@ -620,101 +5094,374 @@ test_collection_CardTest.prototype = $extend(test_base_BaseTest.prototype,{
 		this.col.appendChild(innerCol);
 	}
 	,fabsInCard: function() {
-		var classes = ["s12","m4"];
 		var this1 = window.document.createElement("div");
-		this1.classList.add("col");
-		if(classes != null) {
-			var _g = 0;
-			while(_g < classes.length) {
-				var grid = classes[_g];
-				++_g;
-				this1.classList.add(grid);
-			}
+		var _g = 0;
+		var _g1 = ["col"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
 		}
 		var innerCol = this1;
+		innerCol.classList.add("s12","m4");
 		var this2 = window.document.createElement("div");
-		this2.classList.add("card");
+		var _g2 = 0;
+		var _g11 = ["card"];
+		while(_g2 < _g11.length) {
+			var cls1 = _g11[_g2];
+			++_g2;
+			this2.classList.add(cls1);
+		}
 		var card = this2;
-		var this3 = window.document.createElement("div");
-		this3.classList.add("card-image","waves-effect","waves-light","waves-block");
+		var params = { text : "Card Title"};
+		var this3 = window.document.createElement("span");
+		var _g3 = 0;
+		var _g12 = ["card-title"];
+		while(_g3 < _g12.length) {
+			var cls2 = _g12[_g3];
+			++_g3;
+			this3.classList.add(cls2);
+		}
+		if(params != null) {
+			var _g4 = 0;
+			var _g13 = Reflect.fields(params);
+			while(_g4 < _g13.length) {
+				var field = _g13[_g4];
+				++_g4;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g31 = Reflect.fields(params.elements);
+					while(_g21 < _g31.length) {
+						var field1 = _g31[_g21];
+						++_g21;
+						this3.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this3.innerHTML += params.html;
+					break;
+				case "text":
+					this3.innerText += params.text;
+					break;
+				}
+			}
+		}
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g5 = 0;
+				var _g14 = Reflect.fields(params.classList);
+				while(_g5 < _g14.length) {
+					var field2 = _g14[_g5];
+					++_g5;
+					this3.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
+		var cardTitle = this3;
+		var params1 = { icon : "add", classList : ["halfway-fab"]};
+		var this4 = window.document.createElement("a");
+		var _g6 = 0;
+		var _g15 = ["red","btn-floating","waves-effect","waves-light"];
+		while(_g6 < _g15.length) {
+			var cls3 = _g15[_g6];
+			++_g6;
+			this4.classList.add(cls3);
+		}
+		if(params1 != null) {
+			var _g7 = 0;
+			var _g16 = Reflect.fields(params1);
+			while(_g7 < _g16.length) {
+				var field3 = _g16[_g7];
+				++_g7;
+				switch(field3) {
+				case "elements":
+					var _g22 = 0;
+					var _g32 = Reflect.fields(params1.elements);
+					while(_g22 < _g32.length) {
+						var field4 = _g32[_g22];
+						++_g22;
+						this4.appendChild(Reflect.field(params1.elements,field4));
+					}
+					break;
+				case "html":
+					this4.innerHTML += params1.html;
+					break;
+				case "text":
+					this4.innerText += params1.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params1,"icon")) {
+			var params2 = { icon : params1.icon, direction : params1.direction != null ? params1.direction : "right"};
+			var this5 = window.document.createElement("i");
+			var _g8 = 0;
+			var _g17 = ["material-icons","right"];
+			while(_g8 < _g17.length) {
+				var cls4 = _g17[_g8];
+				++_g8;
+				this5.classList.add(cls4);
+			}
+			if(params2 != null) {
+				var _g9 = 0;
+				var _g18 = Reflect.fields(params2);
+				while(_g9 < _g18.length) {
+					var field5 = _g18[_g9];
+					++_g9;
+					switch(field5) {
+					case "elements":
+						var _g23 = 0;
+						var _g33 = Reflect.fields(params2.elements);
+						while(_g23 < _g33.length) {
+							var field6 = _g33[_g23];
+							++_g23;
+							this5.appendChild(Reflect.field(params2.elements,field6));
+						}
+						break;
+					case "html":
+						this5.innerHTML += params2.html;
+						break;
+					case "text":
+						this5.innerText += params2.text;
+						break;
+					}
+				}
+			}
+			if(Object.prototype.hasOwnProperty.call(params2,"direction")) {
+				var direction = params2.direction;
+				this5.classList.remove("right","left");
+				this5.classList.add(direction);
+			} else {
+				this5.classList.remove("right","left");
+				this5.classList.add("right");
+			}
+			this5.innerText = params2.icon;
+			if(params2 != null) {
+				if(Object.prototype.hasOwnProperty.call(params2,"classList")) {
+					var _g10 = 0;
+					var _g19 = Reflect.fields(params2.classList);
+					while(_g10 < _g19.length) {
+						var field7 = _g19[_g10];
+						++_g10;
+						this5.classList.add(Reflect.field(params2.classList,field7));
+					}
+				}
+			}
+			this4.appendChild(this5);
+		}
+		if(params1 != null) {
+			if(Object.prototype.hasOwnProperty.call(params1,"classList")) {
+				var _g20 = 0;
+				var _g110 = Reflect.fields(params1.classList);
+				while(_g20 < _g110.length) {
+					var field8 = _g110[_g20];
+					++_g20;
+					this4.classList.add(Reflect.field(params1.classList,field8));
+				}
+			}
+		}
+		var floatingButton = this4;
+		var params3 = { html : "<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>"};
+		var this6 = window.document.createElement("div");
+		var _g24 = 0;
+		var _g111 = ["card-content"];
+		while(_g24 < _g111.length) {
+			var cls5 = _g111[_g24];
+			++_g24;
+			this6.classList.add(cls5);
+		}
+		if(params3 != null) {
+			var _g25 = 0;
+			var _g112 = Reflect.fields(params3);
+			while(_g25 < _g112.length) {
+				var field9 = _g112[_g25];
+				++_g25;
+				switch(field9) {
+				case "elements":
+					var _g26 = 0;
+					var _g34 = Reflect.fields(params3.elements);
+					while(_g26 < _g34.length) {
+						var field10 = _g34[_g26];
+						++_g26;
+						this6.appendChild(Reflect.field(params3.elements,field10));
+					}
+					break;
+				case "html":
+					this6.innerHTML += params3.html;
+					break;
+				case "text":
+					this6.innerText += params3.text;
+					break;
+				}
+			}
+		}
+		if(params3 != null) {
+			if(Object.prototype.hasOwnProperty.call(params3,"classList")) {
+				var _g27 = 0;
+				var _g113 = Reflect.fields(params3.classList);
+				while(_g27 < _g113.length) {
+					var field11 = _g113[_g27];
+					++_g27;
+					this6.classList.add(Reflect.field(params3.classList,field11));
+				}
+			}
+		}
+		var cardContent = this6;
+		var params4 = { src : "https://materializecss.com/images/sample-1.jpg", elements : [cardTitle,floatingButton]};
+		var this7 = window.document.createElement("div");
+		var _g28 = 0;
+		var _g114 = ["card-image","wave"];
+		while(_g28 < _g114.length) {
+			var cls6 = _g114[_g28];
+			++_g28;
+			this7.classList.add(cls6);
+		}
+		if(params4 != null) {
+			var _g29 = 0;
+			var _g115 = Reflect.fields(params4);
+			while(_g29 < _g115.length) {
+				var field12 = _g115[_g29];
+				++_g29;
+				switch(field12) {
+				case "elements":
+					var _g210 = 0;
+					var _g35 = Reflect.fields(params4.elements);
+					while(_g210 < _g35.length) {
+						var field13 = _g35[_g210];
+						++_g210;
+						this7.appendChild(Reflect.field(params4.elements,field13));
+					}
+					break;
+				case "html":
+					this7.innerHTML += params4.html;
+					break;
+				case "text":
+					this7.innerText += params4.text;
+					break;
+				}
+			}
+		}
 		var img = window.document.createElement("img");
 		img.classList.add("activator");
-		img.src = "https://materializecss.com/images/sample-1.jpg";
-		this3.appendChild(img);
-		var cardImage = this3;
-		var this4 = window.document.createElement("span");
-		this4.classList.add("card-title");
-		this4.innerHTML = "Card Title";
-		var cardTitle = this4;
-		var this5 = window.document.createElement("a");
-		this5.classList.add("btn-floating","waves-effect","waves-light","red");
-		this5.classList.add("btn");
-		var floatingButton = this5;
-		var params = { icon : "add"};
-		var this6 = window.document.createElement("i");
-		this6.classList.add("material-icons");
-		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
-			var direction = params.direction;
-			this6.classList.remove("right","left");
-			this6.classList.add(direction);
-		} else {
-			this6.classList.remove("right","left");
-			this6.classList.add("right");
+		img.src = params4.src;
+		this7.appendChild(img);
+		if(params4 != null) {
+			if(Object.prototype.hasOwnProperty.call(params4,"classList")) {
+				var _g30 = 0;
+				var _g116 = Reflect.fields(params4.classList);
+				while(_g30 < _g116.length) {
+					var field14 = _g116[_g30];
+					++_g30;
+					this7.classList.add(Reflect.field(params4.classList,field14));
+				}
+			}
 		}
-		this6.innerText = params.icon;
-		model__$Components_FloatingButton_$Impl_$.setIcon(floatingButton,this6);
-		floatingButton.classList.add("halfway-fab");
-		var this7;
-		var i = window.document.createElement("div");
-		this7 = window.document.createElement("div");
-		this7.classList.add("card-content");
-		var cardContent = this7;
-		var paragraph = window.document.createElement("p");
-		paragraph.innerText = "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.";
-		cardImage.appendChild(cardTitle);
-		cardImage.appendChild(floatingButton);
-		cardContent.appendChild(paragraph);
+		var cardImage = this7;
 		card.appendChild(cardImage);
 		card.appendChild(cardContent);
 		innerCol.appendChild(card);
 		this.col.appendChild(innerCol);
 	}
 	,horizontalCard: function() {
-		var classes = ["s12","m7"];
 		var this1 = window.document.createElement("div");
-		this1.classList.add("col");
-		if(classes != null) {
-			var _g = 0;
-			while(_g < classes.length) {
-				var grid = classes[_g];
-				++_g;
-				this1.classList.add(grid);
-			}
+		var _g = 0;
+		var _g1 = ["col"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
 		}
 		var innerCol = this1;
+		innerCol.classList.add("s12","m7");
 		var this2 = window.document.createElement("div");
-		this2.classList.add("card");
+		var _g2 = 0;
+		var _g11 = ["card"];
+		while(_g2 < _g11.length) {
+			var cls1 = _g11[_g2];
+			++_g2;
+			this2.classList.add(cls1);
+		}
 		var card = this2;
+		var params = { src : "https://lorempixel.com/100/190/nature/6"};
 		var this3 = window.document.createElement("div");
-		this3.classList.add("card-image","waves-effect","waves-light","waves-block");
+		var _g3 = 0;
+		var _g12 = ["card-image","wave"];
+		while(_g3 < _g12.length) {
+			var cls2 = _g12[_g3];
+			++_g3;
+			this3.classList.add(cls2);
+		}
+		if(params != null) {
+			var _g4 = 0;
+			var _g13 = Reflect.fields(params);
+			while(_g4 < _g13.length) {
+				var field = _g13[_g4];
+				++_g4;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g31 = Reflect.fields(params.elements);
+					while(_g21 < _g31.length) {
+						var field1 = _g31[_g21];
+						++_g21;
+						this3.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this3.innerHTML += params.html;
+					break;
+				case "text":
+					this3.innerText += params.text;
+					break;
+				}
+			}
+		}
 		var img = window.document.createElement("img");
 		img.classList.add("activator");
-		img.src = "https://lorempixel.com/100/190/nature/6";
+		img.src = params.src;
 		this3.appendChild(img);
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g5 = 0;
+				var _g14 = Reflect.fields(params.classList);
+				while(_g5 < _g14.length) {
+					var field2 = _g14[_g5];
+					++_g5;
+					this3.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
 		var cardImage = this3;
 		card.classList.add("horizontal");
-		var this4;
-		var i = window.document.createElement("div");
-		this4 = window.document.createElement("div");
-		this4.classList.add("card-content");
+		var this4 = window.document.createElement("div");
+		var _g6 = 0;
+		var _g15 = ["card-content"];
+		while(_g6 < _g15.length) {
+			var cls3 = _g15[_g6];
+			++_g6;
+			this4.classList.add(cls3);
+		}
 		var cardContent = this4;
 		var this5 = window.document.createElement("div");
-		this5.classList.add("card-stacked");
+		var _g7 = 0;
+		var _g16 = ["card-stacked"];
+		while(_g7 < _g16.length) {
+			var cls4 = _g16[_g7];
+			++_g7;
+			this5.classList.add(cls4);
+		}
 		var cardStacked = this5;
 		var paragraph = window.document.createElement("p");
 		paragraph.innerText = "I am a very simple card. I am good at containing small bits of information.";
 		var this6 = window.document.createElement("div");
-		this6.classList.add("card-action");
+		var _g8 = 0;
+		var _g17 = ["card-action"];
+		while(_g8 < _g17.length) {
+			var cls5 = _g17[_g8];
+			++_g8;
+			this6.classList.add(cls5);
+		}
 		var cardAction = this6;
 		cardAction.innerHTML = "<a href=\"#\">This is a link</a>";
 		cardStacked.appendChild(cardContent);
@@ -726,129 +5473,632 @@ test_collection_CardTest.prototype = $extend(test_base_BaseTest.prototype,{
 		this.col.appendChild(innerCol);
 	}
 	,revealCard: function() {
-		var classes = ["s12","m5"];
+		var params = { src : "https://materializecss.com/images/office.jpg"};
 		var this1 = window.document.createElement("div");
-		this1.classList.add("col");
-		if(classes != null) {
-			var _g = 0;
-			while(_g < classes.length) {
-				var grid = classes[_g];
-				++_g;
-				this1.classList.add(grid);
+		var _g = 0;
+		var _g1 = ["card-image","wave"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
+		}
+		if(params != null) {
+			var _g2 = 0;
+			var _g11 = Reflect.fields(params);
+			while(_g2 < _g11.length) {
+				var field = _g11[_g2];
+				++_g2;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g3 = Reflect.fields(params.elements);
+					while(_g21 < _g3.length) {
+						var field1 = _g3[_g21];
+						++_g21;
+						this1.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this1.innerHTML += params.html;
+					break;
+				case "text":
+					this1.innerText += params.text;
+					break;
+				}
 			}
 		}
-		var innerCol = this1;
-		var this2 = window.document.createElement("div");
-		this2.classList.add("card");
-		var card = this2;
-		var this3;
-		var i = window.document.createElement("div");
-		this3 = window.document.createElement("div");
-		this3.classList.add("card-content");
-		var cardContent = this3;
-		var this4 = window.document.createElement("div");
-		this4.classList.add("card-image","waves-effect","waves-light","waves-block");
 		var img = window.document.createElement("img");
 		img.classList.add("activator");
-		img.src = "https://materializecss.com/images/office.jpg";
-		this4.appendChild(img);
-		var cardImage = this4;
-		var this5 = window.document.createElement("span");
-		this5.classList.add("card-title");
-		this5.innerHTML = "Card Title";
-		var cardTitle = this5;
-		var this6 = window.document.createElement("div");
-		this6.classList.add("card-reveal");
-		var cardReveal = this6;
-		var this7 = window.document.createElement("span");
-		this7.classList.add("card-title");
-		this7.innerHTML = "Card Title";
-		var revealTitle = this7;
-		var revealParagraph = window.document.createElement("p");
-		revealTitle.classList.add("gray-text","text-darken-4");
-		var params = { icon : "close", direction : "right"};
-		var this8 = window.document.createElement("i");
-		this8.classList.add("material-icons");
-		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
-			var direction = params.direction;
-			this8.classList.remove("right","left");
-			this8.classList.add(direction);
-		} else {
-			this8.classList.remove("right","left");
-			this8.classList.add("right");
+		img.src = params.src;
+		this1.appendChild(img);
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g4 = 0;
+				var _g12 = Reflect.fields(params.classList);
+				while(_g4 < _g12.length) {
+					var field2 = _g12[_g4];
+					++_g4;
+					this1.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
 		}
-		this8.innerText = params.icon;
-		model__$Components_CardTitle_$Impl_$.appendHtml(revealTitle,this8.outerHTML);
-		revealParagraph.textContent = "Here is some more information about this product that is only revealed once clicked on.";
-		cardTitle.classList.add("activator","gray-text","text-darken-4");
-		var link = window.document.createElement("p");
-		link.innerHTML = "<a href=\"#\">This is a link</a>";
-		card.appendChild(cardImage);
-		card.appendChild(cardContent);
-		card.appendChild(cardReveal);
-		cardContent.appendChild(cardTitle);
-		cardContent.appendChild(link);
-		cardReveal.appendChild(revealTitle);
-		cardReveal.appendChild(revealParagraph);
-		innerCol.appendChild(card);
-		this.col.appendChild(innerCol);
+		var cardImage = this1;
+		var params1 = { text : "Card Title", classList : ["activator","gray-text","text-darken-4"]};
+		var this2 = window.document.createElement("span");
+		var _g5 = 0;
+		var _g13 = ["card-title"];
+		while(_g5 < _g13.length) {
+			var cls1 = _g13[_g5];
+			++_g5;
+			this2.classList.add(cls1);
+		}
+		if(params1 != null) {
+			var _g6 = 0;
+			var _g14 = Reflect.fields(params1);
+			while(_g6 < _g14.length) {
+				var field3 = _g14[_g6];
+				++_g6;
+				switch(field3) {
+				case "elements":
+					var _g22 = 0;
+					var _g31 = Reflect.fields(params1.elements);
+					while(_g22 < _g31.length) {
+						var field4 = _g31[_g22];
+						++_g22;
+						this2.appendChild(Reflect.field(params1.elements,field4));
+					}
+					break;
+				case "html":
+					this2.innerHTML += params1.html;
+					break;
+				case "text":
+					this2.innerText += params1.text;
+					break;
+				}
+			}
+		}
+		if(params1 != null) {
+			if(Object.prototype.hasOwnProperty.call(params1,"classList")) {
+				var _g7 = 0;
+				var _g15 = Reflect.fields(params1.classList);
+				while(_g7 < _g15.length) {
+					var field5 = _g15[_g7];
+					++_g7;
+					this2.classList.add(Reflect.field(params1.classList,field5));
+				}
+			}
+		}
+		var cardTitle = this2;
+		var params2 = { elements : [cardTitle], html : "<p><a href=\"#\">This is a link</a></p>"};
+		var this3 = window.document.createElement("div");
+		var _g8 = 0;
+		var _g16 = ["card-content"];
+		while(_g8 < _g16.length) {
+			var cls2 = _g16[_g8];
+			++_g8;
+			this3.classList.add(cls2);
+		}
+		if(params2 != null) {
+			var _g9 = 0;
+			var _g17 = Reflect.fields(params2);
+			while(_g9 < _g17.length) {
+				var field6 = _g17[_g9];
+				++_g9;
+				switch(field6) {
+				case "elements":
+					var _g23 = 0;
+					var _g32 = Reflect.fields(params2.elements);
+					while(_g23 < _g32.length) {
+						var field7 = _g32[_g23];
+						++_g23;
+						this3.appendChild(Reflect.field(params2.elements,field7));
+					}
+					break;
+				case "html":
+					this3.innerHTML += params2.html;
+					break;
+				case "text":
+					this3.innerText += params2.text;
+					break;
+				}
+			}
+		}
+		if(params2 != null) {
+			if(Object.prototype.hasOwnProperty.call(params2,"classList")) {
+				var _g10 = 0;
+				var _g18 = Reflect.fields(params2.classList);
+				while(_g10 < _g18.length) {
+					var field8 = _g18[_g10];
+					++_g10;
+					this3.classList.add(Reflect.field(params2.classList,field8));
+				}
+			}
+		}
+		var cardContent = this3;
+		var params3 = { icon : "close"};
+		var this4 = window.document.createElement("i");
+		var _g19 = 0;
+		var _g110 = ["material-icons","right"];
+		while(_g19 < _g110.length) {
+			var cls3 = _g110[_g19];
+			++_g19;
+			this4.classList.add(cls3);
+		}
+		if(params3 != null) {
+			var _g20 = 0;
+			var _g111 = Reflect.fields(params3);
+			while(_g20 < _g111.length) {
+				var field9 = _g111[_g20];
+				++_g20;
+				switch(field9) {
+				case "elements":
+					var _g24 = 0;
+					var _g33 = Reflect.fields(params3.elements);
+					while(_g24 < _g33.length) {
+						var field10 = _g33[_g24];
+						++_g24;
+						this4.appendChild(Reflect.field(params3.elements,field10));
+					}
+					break;
+				case "html":
+					this4.innerHTML += params3.html;
+					break;
+				case "text":
+					this4.innerText += params3.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params3,"direction")) {
+			var direction = params3.direction;
+			this4.classList.remove("right","left");
+			this4.classList.add(direction);
+		} else {
+			this4.classList.remove("right","left");
+			this4.classList.add("right");
+		}
+		this4.innerText = params3.icon;
+		if(params3 != null) {
+			if(Object.prototype.hasOwnProperty.call(params3,"classList")) {
+				var _g25 = 0;
+				var _g112 = Reflect.fields(params3.classList);
+				while(_g25 < _g112.length) {
+					var field11 = _g112[_g25];
+					++_g25;
+					this4.classList.add(Reflect.field(params3.classList,field11));
+				}
+			}
+		}
+		var params4 = { text : "Card Title", classList : ["gray-text","text-darken-4"], elements : [this4]};
+		var this5 = window.document.createElement("span");
+		var _g26 = 0;
+		var _g113 = ["card-title"];
+		while(_g26 < _g113.length) {
+			var cls4 = _g113[_g26];
+			++_g26;
+			this5.classList.add(cls4);
+		}
+		if(params4 != null) {
+			var _g27 = 0;
+			var _g114 = Reflect.fields(params4);
+			while(_g27 < _g114.length) {
+				var field12 = _g114[_g27];
+				++_g27;
+				switch(field12) {
+				case "elements":
+					var _g28 = 0;
+					var _g34 = Reflect.fields(params4.elements);
+					while(_g28 < _g34.length) {
+						var field13 = _g34[_g28];
+						++_g28;
+						this5.appendChild(Reflect.field(params4.elements,field13));
+					}
+					break;
+				case "html":
+					this5.innerHTML += params4.html;
+					break;
+				case "text":
+					this5.innerText += params4.text;
+					break;
+				}
+			}
+		}
+		if(params4 != null) {
+			if(Object.prototype.hasOwnProperty.call(params4,"classList")) {
+				var _g29 = 0;
+				var _g115 = Reflect.fields(params4.classList);
+				while(_g29 < _g115.length) {
+					var field14 = _g115[_g29];
+					++_g29;
+					this5.classList.add(Reflect.field(params4.classList,field14));
+				}
+			}
+		}
+		var params5 = { elements : [this5], html : "<p>Here is some more information about this product that is only revealed once clicked on.</p>"};
+		var this6 = window.document.createElement("div");
+		var _g30 = 0;
+		var _g116 = ["card-reveal"];
+		while(_g30 < _g116.length) {
+			var cls5 = _g116[_g30];
+			++_g30;
+			this6.classList.add(cls5);
+		}
+		if(params5 != null) {
+			var _g35 = 0;
+			var _g117 = Reflect.fields(params5);
+			while(_g35 < _g117.length) {
+				var field15 = _g117[_g35];
+				++_g35;
+				switch(field15) {
+				case "elements":
+					var _g210 = 0;
+					var _g36 = Reflect.fields(params5.elements);
+					while(_g210 < _g36.length) {
+						var field16 = _g36[_g210];
+						++_g210;
+						this6.appendChild(Reflect.field(params5.elements,field16));
+					}
+					break;
+				case "html":
+					this6.innerHTML += params5.html;
+					break;
+				case "text":
+					this6.innerText += params5.text;
+					break;
+				}
+			}
+		}
+		if(params5 != null) {
+			if(Object.prototype.hasOwnProperty.call(params5,"classList")) {
+				var _g37 = 0;
+				var _g118 = Reflect.fields(params5.classList);
+				while(_g37 < _g118.length) {
+					var field17 = _g118[_g37];
+					++_g37;
+					this6.classList.add(Reflect.field(params5.classList,field17));
+				}
+			}
+		}
+		var cardReveal = this6;
+		var params6 = { elements : [cardImage,cardContent,cardReveal]};
+		var this7 = window.document.createElement("div");
+		var _g38 = 0;
+		var _g119 = ["card"];
+		while(_g38 < _g119.length) {
+			var cls6 = _g119[_g38];
+			++_g38;
+			this7.classList.add(cls6);
+		}
+		if(params6 != null) {
+			var _g39 = 0;
+			var _g120 = Reflect.fields(params6);
+			while(_g39 < _g120.length) {
+				var field18 = _g120[_g39];
+				++_g39;
+				switch(field18) {
+				case "elements":
+					var _g211 = 0;
+					var _g310 = Reflect.fields(params6.elements);
+					while(_g211 < _g310.length) {
+						var field19 = _g310[_g211];
+						++_g211;
+						this7.appendChild(Reflect.field(params6.elements,field19));
+					}
+					break;
+				case "html":
+					this7.innerHTML += params6.html;
+					break;
+				case "text":
+					this7.innerText += params6.text;
+					break;
+				}
+			}
+		}
+		if(params6 != null) {
+			if(Object.prototype.hasOwnProperty.call(params6,"classList")) {
+				var _g40 = 0;
+				var _g121 = Reflect.fields(params6.classList);
+				while(_g40 < _g121.length) {
+					var field20 = _g121[_g40];
+					++_g40;
+					this7.classList.add(Reflect.field(params6.classList,field20));
+				}
+			}
+		}
+		var card = this7;
+		var tmp = this.col;
+		var params7 = { elements : [card], classList : ["s12","m5"]};
+		var this8 = window.document.createElement("div");
+		var _g41 = 0;
+		var _g122 = ["col"];
+		while(_g41 < _g122.length) {
+			var cls7 = _g122[_g41];
+			++_g41;
+			this8.classList.add(cls7);
+		}
+		if(params7 != null) {
+			var _g42 = 0;
+			var _g123 = Reflect.fields(params7);
+			while(_g42 < _g123.length) {
+				var field21 = _g123[_g42];
+				++_g42;
+				switch(field21) {
+				case "elements":
+					var _g212 = 0;
+					var _g311 = Reflect.fields(params7.elements);
+					while(_g212 < _g311.length) {
+						var field22 = _g311[_g212];
+						++_g212;
+						this8.appendChild(Reflect.field(params7.elements,field22));
+					}
+					break;
+				case "html":
+					this8.innerHTML += params7.html;
+					break;
+				case "text":
+					this8.innerText += params7.text;
+					break;
+				}
+			}
+		}
+		if(params7 != null) {
+			if(Object.prototype.hasOwnProperty.call(params7,"classList")) {
+				var _g43 = 0;
+				var _g124 = Reflect.fields(params7.classList);
+				while(_g43 < _g124.length) {
+					var field23 = _g124[_g43];
+					++_g43;
+					this8.classList.add(Reflect.field(params7.classList,field23));
+				}
+			}
+		}
+		tmp.appendChild(this8);
 	}
 	,revealCardStickyAction: function() {
-		var classes = ["s12","m5"];
 		var this1 = window.document.createElement("div");
-		this1.classList.add("col");
-		if(classes != null) {
-			var _g = 0;
-			while(_g < classes.length) {
-				var grid = classes[_g];
-				++_g;
-				this1.classList.add(grid);
-			}
+		var _g = 0;
+		var _g1 = ["col"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
 		}
 		var innerCol = this1;
+		innerCol.classList.add("s12","m5");
 		var this2 = window.document.createElement("div");
-		this2.classList.add("card","sticky-action");
+		var _g2 = 0;
+		var _g11 = ["card","sticky-action"];
+		while(_g2 < _g11.length) {
+			var cls1 = _g11[_g2];
+			++_g2;
+			this2.classList.add(cls1);
+		}
 		var card = this2;
 		var this3 = window.document.createElement("div");
-		this3.classList.add("card-action");
+		var _g3 = 0;
+		var _g12 = ["card-action"];
+		while(_g3 < _g12.length) {
+			var cls2 = _g12[_g3];
+			++_g3;
+			this3.classList.add(cls2);
+		}
 		var cardAction = this3;
-		var this4;
-		var i = window.document.createElement("div");
-		this4 = window.document.createElement("div");
-		this4.classList.add("card-content");
+		var this4 = window.document.createElement("div");
+		var _g4 = 0;
+		var _g13 = ["card-content"];
+		while(_g4 < _g13.length) {
+			var cls3 = _g13[_g4];
+			++_g4;
+			this4.classList.add(cls3);
+		}
 		var cardContent = this4;
+		var params = { src : "https://materializecss.com/images/office.jpg"};
 		var this5 = window.document.createElement("div");
-		this5.classList.add("card-image","waves-effect","waves-light","waves-block");
+		var _g5 = 0;
+		var _g14 = ["card-image","wave"];
+		while(_g5 < _g14.length) {
+			var cls4 = _g14[_g5];
+			++_g5;
+			this5.classList.add(cls4);
+		}
+		if(params != null) {
+			var _g6 = 0;
+			var _g15 = Reflect.fields(params);
+			while(_g6 < _g15.length) {
+				var field = _g15[_g6];
+				++_g6;
+				switch(field) {
+				case "elements":
+					var _g21 = 0;
+					var _g31 = Reflect.fields(params.elements);
+					while(_g21 < _g31.length) {
+						var field1 = _g31[_g21];
+						++_g21;
+						this5.appendChild(Reflect.field(params.elements,field1));
+					}
+					break;
+				case "html":
+					this5.innerHTML += params.html;
+					break;
+				case "text":
+					this5.innerText += params.text;
+					break;
+				}
+			}
+		}
 		var img = window.document.createElement("img");
 		img.classList.add("activator");
-		img.src = "https://materializecss.com/images/office.jpg";
+		img.src = params.src;
 		this5.appendChild(img);
+		if(params != null) {
+			if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+				var _g7 = 0;
+				var _g16 = Reflect.fields(params.classList);
+				while(_g7 < _g16.length) {
+					var field2 = _g16[_g7];
+					++_g7;
+					this5.classList.add(Reflect.field(params.classList,field2));
+				}
+			}
+		}
 		var cardImage = this5;
+		var params1 = { text : "Card Title666"};
 		var this6 = window.document.createElement("span");
-		this6.classList.add("card-title");
-		this6.innerHTML = "Card Title";
+		var _g8 = 0;
+		var _g17 = ["card-title"];
+		while(_g8 < _g17.length) {
+			var cls5 = _g17[_g8];
+			++_g8;
+			this6.classList.add(cls5);
+		}
+		if(params1 != null) {
+			var _g9 = 0;
+			var _g18 = Reflect.fields(params1);
+			while(_g9 < _g18.length) {
+				var field3 = _g18[_g9];
+				++_g9;
+				switch(field3) {
+				case "elements":
+					var _g22 = 0;
+					var _g32 = Reflect.fields(params1.elements);
+					while(_g22 < _g32.length) {
+						var field4 = _g32[_g22];
+						++_g22;
+						this6.appendChild(Reflect.field(params1.elements,field4));
+					}
+					break;
+				case "html":
+					this6.innerHTML += params1.html;
+					break;
+				case "text":
+					this6.innerText += params1.text;
+					break;
+				}
+			}
+		}
+		if(params1 != null) {
+			if(Object.prototype.hasOwnProperty.call(params1,"classList")) {
+				var _g10 = 0;
+				var _g19 = Reflect.fields(params1.classList);
+				while(_g10 < _g19.length) {
+					var field5 = _g19[_g10];
+					++_g10;
+					this6.classList.add(Reflect.field(params1.classList,field5));
+				}
+			}
+		}
 		var cardTitle = this6;
 		var this7 = window.document.createElement("div");
-		this7.classList.add("card-reveal");
+		var _g20 = 0;
+		var _g110 = ["card-reveal"];
+		while(_g20 < _g110.length) {
+			var cls6 = _g110[_g20];
+			++_g20;
+			this7.classList.add(cls6);
+		}
 		var cardReveal = this7;
+		var params2 = { text : "Card Title"};
 		var this8 = window.document.createElement("span");
-		this8.classList.add("card-title");
-		this8.innerHTML = "Card Title";
+		var _g23 = 0;
+		var _g111 = ["card-title"];
+		while(_g23 < _g111.length) {
+			var cls7 = _g111[_g23];
+			++_g23;
+			this8.classList.add(cls7);
+		}
+		if(params2 != null) {
+			var _g24 = 0;
+			var _g112 = Reflect.fields(params2);
+			while(_g24 < _g112.length) {
+				var field6 = _g112[_g24];
+				++_g24;
+				switch(field6) {
+				case "elements":
+					var _g25 = 0;
+					var _g33 = Reflect.fields(params2.elements);
+					while(_g25 < _g33.length) {
+						var field7 = _g33[_g25];
+						++_g25;
+						this8.appendChild(Reflect.field(params2.elements,field7));
+					}
+					break;
+				case "html":
+					this8.innerHTML += params2.html;
+					break;
+				case "text":
+					this8.innerText += params2.text;
+					break;
+				}
+			}
+		}
+		if(params2 != null) {
+			if(Object.prototype.hasOwnProperty.call(params2,"classList")) {
+				var _g26 = 0;
+				var _g113 = Reflect.fields(params2.classList);
+				while(_g26 < _g113.length) {
+					var field8 = _g113[_g26];
+					++_g26;
+					this8.classList.add(Reflect.field(params2.classList,field8));
+				}
+			}
+		}
 		var revealTitle = this8;
 		var revealParagraph = window.document.createElement("p");
 		revealTitle.classList.add("gray-text","text-darken-4");
-		var params = { icon : "close", direction : "right"};
+		var params3 = { icon : "close"};
 		var this9 = window.document.createElement("i");
-		this9.classList.add("material-icons");
-		if(Object.prototype.hasOwnProperty.call(params,"direction")) {
-			var direction = params.direction;
+		var _g27 = 0;
+		var _g114 = ["material-icons","right"];
+		while(_g27 < _g114.length) {
+			var cls8 = _g114[_g27];
+			++_g27;
+			this9.classList.add(cls8);
+		}
+		if(params3 != null) {
+			var _g28 = 0;
+			var _g115 = Reflect.fields(params3);
+			while(_g28 < _g115.length) {
+				var field9 = _g115[_g28];
+				++_g28;
+				switch(field9) {
+				case "elements":
+					var _g29 = 0;
+					var _g34 = Reflect.fields(params3.elements);
+					while(_g29 < _g34.length) {
+						var field10 = _g34[_g29];
+						++_g29;
+						this9.appendChild(Reflect.field(params3.elements,field10));
+					}
+					break;
+				case "html":
+					this9.innerHTML += params3.html;
+					break;
+				case "text":
+					this9.innerText += params3.text;
+					break;
+				}
+			}
+		}
+		if(Object.prototype.hasOwnProperty.call(params3,"direction")) {
+			var direction = params3.direction;
 			this9.classList.remove("right","left");
 			this9.classList.add(direction);
 		} else {
 			this9.classList.remove("right","left");
 			this9.classList.add("right");
 		}
-		this9.innerText = params.icon;
+		this9.innerText = params3.icon;
+		if(params3 != null) {
+			if(Object.prototype.hasOwnProperty.call(params3,"classList")) {
+				var _g30 = 0;
+				var _g116 = Reflect.fields(params3.classList);
+				while(_g30 < _g116.length) {
+					var field11 = _g116[_g30];
+					++_g30;
+					this9.classList.add(Reflect.field(params3.classList,field11));
+				}
+			}
+		}
 		model__$Components_CardTitle_$Impl_$.appendHtml(revealTitle,this9.outerHTML);
 		revealParagraph.textContent = "Here is some more information about this product that is only revealed once clicked on.";
 		cardTitle.classList.add("activator","gray-text","text-darken-4");
@@ -870,75 +6120,54 @@ test_collection_CardTest.prototype = $extend(test_base_BaseTest.prototype,{
 	}
 	,cardTabs: function() {
 		var this1 = window.document.createElement("div");
-		this1.classList.add("card");
+		var _g = 0;
+		var _g1 = ["card"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
+		}
 		var card = this1;
-		var content = [window.document.createElement("div")];
-		var this2;
-		var i = window.document.createElement("div");
-		this2 = window.document.createElement("div");
-		this2.classList.add("card-content");
-		if(content != null) {
-			if((content instanceof Array) && content.__enum__ == null) {
-				console.log("it is array");
-			} else {
-				console.log("it is string");
-			}
-		}
-		var content1 = this2;
-		var this3;
-		var i1 = window.document.createElement("div");
-		this3 = window.document.createElement("div");
-		this3.classList.add("card-content");
-		if(("asdasd" instanceof Array) && "asdasd".__enum__ == null) {
-			console.log("it is array");
-		} else {
-			console.log("it is string");
-		}
-		var content2 = this3;
-		var this4 = window.document.createElement("div");
-		this4.classList.add("card-tabs");
-		var tabs = this4;
 	}
 });
-var test_collection_CollectionTest = function(container) {
+var test_componenets_CollectionTest = function(container) {
 	test_base_BaseTest.call(this,container);
 	this.simpleCollection();
 	this.linkCollection();
 	this.avatarCollection();
 };
-test_collection_CollectionTest.__super__ = test_base_BaseTest;
-test_collection_CollectionTest.prototype = $extend(test_base_BaseTest.prototype,{
+test_componenets_CollectionTest.__super__ = test_base_BaseTest;
+test_componenets_CollectionTest.prototype = $extend(test_base_BaseTest.prototype,{
 	simpleCollection: function() {
 		var listItem;
 		var this1 = window.document.createElement("ul");
-		this1.classList.add("collection");
+		var _g = 0;
+		var _g1 = ["componenets"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
+		}
 		var listCollection = this1;
 		listCollection.classList.add("with-header");
-		var _g = 0;
-		while(_g < 5) {
-			var i = _g++;
+		var _g2 = 0;
+		while(_g2 < 5) {
+			var i = _g2++;
 			var this2 = window.document.createElement("li");
-			this2.classList.add("collection-item");
+			var _g3 = 0;
+			var _g11 = ["componenets-item"];
+			while(_g3 < _g11.length) {
+				var cls1 = _g11[_g3];
+				++_g3;
+				this2.classList.add(cls1);
+			}
 			listItem = this2;
 			listItem.textContent = "Alvin";
 			if(i == 0) {
-				listItem.classList.add("collection-header");
+				listItem.classList.add("componenets-header");
 				listItem.innerHTML = "<h4>First Names</h4>";
 			} else {
 				var anchor = window.document.createElement("a");
-				var params = { icon : "send"};
-				var this3 = window.document.createElement("i");
-				this3.classList.add("material-icons");
-				if(Object.prototype.hasOwnProperty.call(params,"direction")) {
-					var direction = params.direction;
-					this3.classList.remove("right","left");
-					this3.classList.add(direction);
-				} else {
-					this3.classList.remove("right","left");
-					this3.classList.add("right");
-				}
-				this3.innerText = params.icon;
-				anchor.appendChild(this3);
 				anchor.href = "http://www.devinflow.hu";
 				model__$Components_ListCollectionItem_$Impl_$.setSecondaryContent(listItem,anchor);
 			}
@@ -948,14 +6177,26 @@ test_collection_CollectionTest.prototype = $extend(test_base_BaseTest.prototype,
 	}
 	,linkCollection: function() {
 		var this1 = window.document.createElement("div");
-		this1.classList.add("collection");
+		var _g = 0;
+		var _g1 = ["componenets"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
+		}
 		var anchorCollection = this1;
 		var anchorItem;
-		var _g = 0;
-		while(_g < 5) {
-			var i = _g++;
+		var _g2 = 0;
+		while(_g2 < 5) {
+			var i = _g2++;
 			var this2 = window.document.createElement("a");
-			this2.classList.add("collection-item");
+			var _g3 = 0;
+			var _g11 = ["componenets-item"];
+			while(_g3 < _g11.length) {
+				var cls1 = _g11[_g3];
+				++_g3;
+				this2.classList.add(cls1);
+			}
 			anchorItem = this2;
 			anchorItem.href = "http://www.devinflow.hu";
 			anchorItem.text = "Alvin";
@@ -966,21 +6207,64 @@ test_collection_CollectionTest.prototype = $extend(test_base_BaseTest.prototype,
 	}
 	,avatarCollection: function() {
 		var this1 = window.document.createElement("ul");
-		this1.classList.add("collection");
+		var _g = 0;
+		var _g1 = ["componenets"];
+		while(_g < _g1.length) {
+			var cls = _g1[_g];
+			++_g;
+			this1.classList.add(cls);
+		}
 		var avatarCollection = this1;
 		var avatarItem;
-		var _g = 0;
-		while(_g < 5) {
-			var i = _g++;
+		var _g2 = 0;
+		while(_g2 < 5) {
+			var i = _g2++;
 			var this2 = window.document.createElement("li");
-			this2.classList.add("collection-item");
+			var _g3 = 0;
+			var _g11 = ["componenets-item"];
+			while(_g3 < _g11.length) {
+				var cls1 = _g11[_g3];
+				++_g3;
+				this2.classList.add(cls1);
+			}
 			avatarItem = this2;
 			avatarItem.classList.add("avatar");
 			avatarItem.innerHTML = "<img src=\"https://materializecss.com/images/yuna.jpg\" alt=\"\" class=\"circle\">\n      <span class=\"title\">Title</span>\n      <p>First Line <br>\n         Second Line\n      </p>";
 			var anchor = window.document.createElement("a");
 			var params = { icon : "grade"};
 			var this3 = window.document.createElement("i");
-			this3.classList.add("material-icons");
+			var _g4 = 0;
+			var _g12 = ["material-icons","right"];
+			while(_g4 < _g12.length) {
+				var cls2 = _g12[_g4];
+				++_g4;
+				this3.classList.add(cls2);
+			}
+			if(params != null) {
+				var _g5 = 0;
+				var _g13 = Reflect.fields(params);
+				while(_g5 < _g13.length) {
+					var field = _g13[_g5];
+					++_g5;
+					switch(field) {
+					case "elements":
+						var _g21 = 0;
+						var _g31 = Reflect.fields(params.elements);
+						while(_g21 < _g31.length) {
+							var field1 = _g31[_g21];
+							++_g21;
+							this3.appendChild(Reflect.field(params.elements,field1));
+						}
+						break;
+					case "html":
+						this3.innerHTML += params.html;
+						break;
+					case "text":
+						this3.innerText += params.text;
+						break;
+					}
+				}
+			}
 			if(Object.prototype.hasOwnProperty.call(params,"direction")) {
 				var direction = params.direction;
 				this3.classList.remove("right","left");
@@ -990,6 +6274,17 @@ test_collection_CollectionTest.prototype = $extend(test_base_BaseTest.prototype,
 				this3.classList.add("right");
 			}
 			this3.innerText = params.icon;
+			if(params != null) {
+				if(Object.prototype.hasOwnProperty.call(params,"classList")) {
+					var _g6 = 0;
+					var _g14 = Reflect.fields(params.classList);
+					while(_g6 < _g14.length) {
+						var field2 = _g14[_g6];
+						++_g6;
+						this3.classList.add(Reflect.field(params.classList,field2));
+					}
+				}
+			}
 			anchor.appendChild(this3);
 			anchor.href = "http://www.devinflow.hu";
 			model__$Components_ListCollectionItem_$Impl_$.setSecondaryContent(avatarItem,anchor);
@@ -998,36 +6293,74 @@ test_collection_CollectionTest.prototype = $extend(test_base_BaseTest.prototype,
 		this.appendChild(avatarCollection);
 	}
 });
-var test_collection_NavbarTest = function(container) {
+var test_componenets_NavbarTest = function(container) {
 	test_base_BaseTest.call(this,container);
 	var this1 = window.document.createElement("div");
-	this1.classList.add("row");
+	var _g = 0;
+	var _g1 = ["row"];
+	while(_g < _g1.length) {
+		var cls = _g1[_g];
+		++_g;
+		this1.classList.add(cls);
+	}
 	var row = this1;
 	var this2 = window.document.createElement("div");
-	this2.classList.add("col");
+	var _g2 = 0;
+	var _g11 = ["col"];
+	while(_g2 < _g11.length) {
+		var cls1 = _g11[_g2];
+		++_g2;
+		this2.classList.add(cls1);
+	}
 	var col = this2;
 	col.classList.add("s12");
 	var this3 = window.document.createElement("a");
-	this3.classList.add("brand-logo");
+	var _g3 = 0;
+	var _g12 = ["brand-logo"];
+	while(_g3 < _g12.length) {
+		var cls2 = _g12[_g3];
+		++_g3;
+		this3.classList.add(cls2);
+	}
 	var brandLogo = this3;
 	brandLogo.textContent = "Logo";
 	brandLogo.classList.remove("right","left");
 	brandLogo.classList.add("right");
 	var this4 = window.document.createElement("nav");
+	var _g4 = 0;
+	var _g13 = ["nav"];
+	while(_g4 < _g13.length) {
+		var cls3 = _g13[_g4];
+		++_g4;
+		this4.classList.add(cls3);
+	}
 	var nav = this4;
 	var this5 = window.document.createElement("div");
-	this5.classList.add("nav-wrapper");
+	var _g5 = 0;
+	var _g14 = ["nav-wrapper"];
+	while(_g5 < _g14.length) {
+		var cls4 = _g14[_g5];
+		++_g5;
+		this5.classList.add(cls4);
+	}
 	var wrapper = this5;
 	var this6 = window.document.createElement("ul");
+	var _g6 = 0;
+	var _g15 = [];
+	while(_g6 < _g15.length) {
+		var cls5 = _g15[_g6];
+		++_g6;
+		this6.classList.add(cls5);
+	}
 	var navMobile = this6;
 	navMobile.classList.remove("right","left");
 	navMobile.classList.add("left");
 	wrapper.appendChild(navMobile);
 	wrapper.appendChild(brandLogo);
 	var listItem;
-	var _g = 0;
-	while(_g < 3) {
-		var i = _g++;
+	var _g7 = 0;
+	while(_g7 < 3) {
+		var i = _g7++;
 		listItem = window.document.createElement("li");
 		listItem.innerHTML = "<a href=\"#\">Sass " + (i + 1) + "</a>";
 		navMobile.appendChild(listItem);
@@ -1037,8 +6370,8 @@ var test_collection_NavbarTest = function(container) {
 	row.appendChild(col);
 	this.container.appendChild(row);
 };
-test_collection_NavbarTest.__super__ = test_base_BaseTest;
-test_collection_NavbarTest.prototype = $extend(test_base_BaseTest.prototype,{
+test_componenets_NavbarTest.__super__ = test_base_BaseTest;
+test_componenets_NavbarTest.prototype = $extend(test_base_BaseTest.prototype,{
 });
 test_Test.main();
 })();

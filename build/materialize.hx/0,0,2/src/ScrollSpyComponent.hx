@@ -7,9 +7,9 @@ typedef ScrollSpyOptions = {
 ?getActiveElement:Int -> Void
 }
 @:native("M.ScrollSpy")
-extern class ScrollSpyComponent extends Component{
+extern class ScrollSpy extends Component {
     public function new(el:Element, ?options:ScrollSpyOptions):Void;
-    public static function init(els:Dynamic, ?options:ScrollSpyOptions):Array<ScrollSpyComponent>;
-    public static function getInstance(el:Element):ScrollSpyComponent;
+	public static function init(els:Dynamic, ?options:ScrollSpyOptions):Array<ScrollSpy>;
+	public static function getInstance(el:Element):ScrollSpy;
 
 }

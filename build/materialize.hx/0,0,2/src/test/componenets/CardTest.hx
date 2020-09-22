@@ -179,9 +179,9 @@ class CardTest extends BaseTest {
     private function cardTabs():Void {
         var card:Card = new Card();
 
-//        var content:CardContent = CharacterCounterComponent CardContent([Browser.document.createDivElement()]);
-//        var content:CardContent = CharacterCounterComponent CardContent("asdasd");
-//        var tabs:CardTabs = CharacterCounterComponent CardTabs();
+		//        var content:CardContent = CharacterCounter CardContent([Browser.document.createDivElement()]);
+		//        var content:CardContent = CharacterCounter CardContent("asdasd");
+		//        var tabs:CardTabs = CharacterCounter CardTabs();
 
 
     }

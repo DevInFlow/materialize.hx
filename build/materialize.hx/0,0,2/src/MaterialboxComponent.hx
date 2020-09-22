@@ -7,9 +7,9 @@ typedef Options = {
 ?outDuration:Int
 }
 @:native("M.Materialbox")
-extern class MaterialboxComponent  extends Component{
-    public static function init(els:Dynamic, ?options:Options):Array<MaterialboxComponent>;
-    public static function getInstance(el:Element):MaterialboxComponent;
+extern class Materialbox extends Component {
+	public static function init(els:Dynamic, ?options:Options):Array<Materialbox>;
+	public static function getInstance(el:Element):Materialbox;
     public function open():Void;
     public function close():Void;
 

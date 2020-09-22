@@ -23,10 +23,10 @@ typedef TimepickerOptions = {
 ?onSelect:Dynamic,
 }
 @:native("M.Timepicker")
-extern class TimePickerComponent extends Component{
+extern class Timepicker extends Component {
     public function new(el:Element, ?options:TimepickerOptions):Void;
-    public static function init(els:Dynamic, ?options:TimepickerOptions):Array<TimePickerComponent>;
-    public static function getInstance(el:Element):TimePickerComponent;
+	public static function init(els:Dynamic, ?options:TimepickerOptions):Array<Timepicker>;
+	public static function getInstance(el:Element):Timepicker;
     public function open():Void;
     public function close():Void;
     public function showView(view:String):Void;

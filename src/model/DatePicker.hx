@@ -1,20 +1,20 @@
 package model;
 //PICKERS
-import DatePickerComponenet.DatepickerOptions;
+import DatePicker.DatepickerOptions;
 import model.base.BaseInputElement;
 @:forward
 @:build(model.macro.Macro.domContainer(BaseInputElement, 'datepicker'))
 abstract DatePicker(BaseInputElement) to BaseInputElement{
 
     public inline function init(?options:DatepickerOptions):Void {
-        new DatePickerComponenet(this, options);
+		new DatePicker(this, options);
     }
 
     public inline function open():Void {
-        DatePickerComponenet.getInstance(this).open();
+		DatePicker.getInstance(this).open();
     }
 
     public inline function close():Void {
-        DatePickerComponenet.getInstance(this).close();
+		DatePicker.getInstance(this).close();
     }
 }

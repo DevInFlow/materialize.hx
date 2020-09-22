@@ -39,10 +39,10 @@ typedef I18 = {
 }
 
 @:native("M.Datepicker")
-extern class DatePickerComponenet extends Component{
+extern class DatePicker extends Component {
     public function new(el:Element, ?options:DatepickerOptions):Void;
-    public static function init(els:Dynamic, ?options:DatepickerOptions):Array<DatePickerComponenet>;
-    public static function getInstance(el:Element):DatePickerComponenet;
+	public static function init(els:Dynamic, ?options:DatepickerOptions):Array<DatePicker>;
+	public static function getInstance(el:Element):DatePicker;
     public function open():Void;
     public function close():Void;
     public function destroySelects():Void;

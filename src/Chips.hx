@@ -14,11 +14,11 @@ typedef ChipsOptions = {
 ?onChipDelete:Dynamic
 }
 @:native("M.Chips")
-extern class ChipsComponenet extends Component{
+extern class Chips extends Component {
     public function new(el:Element, ?options:ChipsOptions):Void;
     public function addChip(chip:{tag:String, ?image:Dynamic}):Void;
     public function selectChip(index:Int):Void;
     public function deleteChip(index:Int):Void;
-    public static function init(els:Dynamic, ?options:ChipsOptions):Array<ChipsComponenet>;
-    public static function getInstance(el:Element):ChipsComponenet;
+	public static function init(els:Dynamic, ?options:ChipsOptions):Array<Chips>;
+	public static function getInstance(el:Element):Chips;
 }

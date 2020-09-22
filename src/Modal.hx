@@ -13,10 +13,10 @@ typedef ModalOptions = {
 ?endingTop:String
 }
 @:native("M.Modal")
-extern class ModalComponent extends Component{
+extern class Modal extends Component {
     public function new(el:Element, ?options:ModalOptions):Void;
-    public static function init(els:Dynamic, ?options:ModalOptions):Array<ModalComponent>;
-    public static function getInstance(el:Element):ModalComponent;
+	public static function init(els:Dynamic, ?options:ModalOptions):Array<Modal>;
+	public static function getInstance(el:Element):Modal;
     public function open(?trigger:Dynamic):Void;
     public function close():Void;
 }

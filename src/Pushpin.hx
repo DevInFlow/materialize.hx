@@ -7,8 +7,8 @@ typedef PushpinOptions = {
 ?onPositionChange:Void -> Void
 }
 @:native("M.Pushpin")
-extern class PushpinComponent extends Component{
+extern class Pushpin extends Component {
     public function new(el:Element, ?options:PushpinOptions):Void;
-    public static function init(els:Dynamic, ?options:PushpinOptions):Array<PushpinComponent>;
-    public static function getInstance(el:Element):PushpinComponent;
+	public static function init(els:Dynamic, ?options:PushpinOptions):Array<Pushpin>;
+	public static function getInstance(el:Element):Pushpin;
 }

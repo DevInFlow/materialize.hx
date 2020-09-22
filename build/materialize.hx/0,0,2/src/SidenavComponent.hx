@@ -11,10 +11,10 @@ typedef SidenavOptions = {
 ?preventScrolling:Bool
 }
 @:native("M.Sidenav")
-extern class SidenavComponent extends Component{
+extern class Sidenav extends Component {
     public function new(el:Element, ?options:SidenavOptions):Void;
-    public static function init(els:Dynamic, ?options:SidenavOptions):Array<SidenavComponent>;
-    public static function getInstance(el:Element):SidenavComponent;
+	public static function init(els:Dynamic, ?options:SidenavOptions):Array<Sidenav>;
+	public static function getInstance(el:Element):Sidenav;
     public function open():Void;
     public function close():Void;
 

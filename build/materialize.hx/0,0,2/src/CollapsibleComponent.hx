@@ -9,10 +9,10 @@ typedef CollapsibleOptions = {
 
 }
 @:native("M.Collapsible")
-extern class CollapsibleComponent {
+extern class Collapsible {
     public function new(el:Element, ?options:CollapsibleOptions):Void;
-    public static function init(els:Dynamic, ?options:CollapsibleOptions):Array<CollapsibleComponent>;
-    public static function getInstance(el:Element):CollapsibleComponent;
+	public static function init(els:Dynamic, ?options:CollapsibleOptions):Array<Collapsible>;
+	public static function getInstance(el:Element):Collapsible;
     public function destroy():Void;
     public function open(index:Int):Void;
     public function close(index:Int):Void;

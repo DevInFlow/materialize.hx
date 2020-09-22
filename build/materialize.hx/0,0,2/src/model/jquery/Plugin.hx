@@ -1,19 +1,19 @@
 package model.jquery;
-import FormSelectComponenet.FormSelectOptions;
-import TimePickerComponent.TimepickerOptions;
-import DatePickerComponenet.DatepickerOptions;
-import ChipsComponenet.ChipsOptions;
+import FormSelect.FormSelectOptions;
+import Timepicker.TimepickerOptions;
+import DatePicker.DatepickerOptions;
+import Chips.ChipsOptions;
 import Autocomplete.AutocompleteOptions;
-import TooltipComponent.TooltipOptions;
-import TabsComponent.TabsOptions;
-import SidenavComponent.SidenavOptions;
-import ScrollSpyComponent.ScrollSpyOptions;
-import PushpinComponent.PushpinOptions;
-import ParallaxComponent.ParallaxOptions;
-import ModalComponent.ModalOptions;
-import DropdownComponent.DropdownOptions;
-import CollapsibleComponent.CollapsibleOptions;
-import CarouselComponent.CarouselOptions;
+import Tooltip.TooltipOptions;
+import Tabs.TabsOptions;
+import Sidenav.SidenavOptions;
+import ScrollSpy.ScrollSpyOptions;
+import Pushpin.PushpinOptions;
+import Parallax.ParallaxOptions;
+import Modal.ModalOptions;
+import Dropdown.DropdownOptions;
+import Collapsible.CollapsibleOptions;
+import Carousel.CarouselOptions;
 import Buttons.FloatingActionButtonOptions;
 extern class Plugin {
     static inline function carousel( j:js.jquery.JQuery, ?arg:CarouselOptions ):Dynamic {

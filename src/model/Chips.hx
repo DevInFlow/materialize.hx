@@ -1,24 +1,24 @@
 package model;
-import ChipsComponenet.ChipsOptions;
+import Chips.ChipsOptions;
 import js.html.DivElement;
 
 @:forward
 @:build(model.macro.Macro.domContainer(DivElement, 'chips'))
 abstract Chips (DivElement) to DivElement {
     public inline function init(?options:ChipsOptions):Void {
-        new ChipsComponenet(this, options);
+		new Chips(this, options);
     }
 
     public function addChip(chip:{tag:String, ?image:Dynamic}):Void {
-        ChipsComponenet.getInstance(this).addChip(chip);
+		Chips.getInstance(this).addChip(chip);
     }
 
     public function deleteChip(index:Int):Void {
-        ChipsComponenet.getInstance(this).deleteChip(index);
+		Chips.getInstance(this).deleteChip(index);
     }
 
     public function selectChip(index:Int):Void {
-        ChipsComponenet.getInstance(this).selectChip(index);
+		Chips.getInstance(this).selectChip(index);
     }
 }
 

@@ -36,7 +36,7 @@ class CollectionTest extends BaseTest {
             else {
 
                 var anchor:AnchorElement = Browser.document.createAnchorElement();
-//                anchor.appendChild(CharacterCounterComponent Icon({icon:Icons.SEND}));
+				//                anchor.appendChild(CharacterCounter Icon({icon:Icons.SEND}));
                 anchor.href = "http://www.devinflow.hu";
 
                 listItem.setSecondaryContent(anchor);

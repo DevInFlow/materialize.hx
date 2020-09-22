@@ -7,10 +7,10 @@ typedef Options = {
 ?interval:Int
 }
 @:native("M.Slider")
-extern class SliderComponent extends Component{
+extern class Slider extends Component {
     public function new(el:Element, ?options:Options):Void;
-    public static function init(els:Dynamic, ?options:Options):Array<SliderComponent>;
-    public static function getInstance(el:Element):SliderComponent;
+	public static function init(els:Dynamic, ?options:Options):Array<Slider>;
+	public static function getInstance(el:Element):Slider;
 
     public function set(index:Int):Void;
     public function pause():Void;

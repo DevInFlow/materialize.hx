@@ -10,10 +10,10 @@ typedef Options={
 ?activationPercent: Float
 }
 @:native("M.Toast")
-extern class ToastComponent extends Component{
+extern class Toast extends Component {
     public function new(el:Element, ?options:Options):Void;
     public static function init(els:Dynamic, ?options:Options):Void;
-    public static function getInstance(el:Element):ToastComponent;
+	public static function getInstance(el:Element):Toast;
 
     public function dismiss():Void;
 

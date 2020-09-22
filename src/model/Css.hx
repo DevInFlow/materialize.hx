@@ -30,7 +30,7 @@ package model;
     var horizontal = 'horizontal';
     var header = 'header';
     var hideOnMedAndDown = 'hide-on-med-and-down';
-    var newnew = 'CharacterCounterComponent';
+	var newnew = 'CharacterCounter';
     var stickyAction = 'sticky-action';
     var secondaryContent = 'secondary-content';
     var small = 'small';

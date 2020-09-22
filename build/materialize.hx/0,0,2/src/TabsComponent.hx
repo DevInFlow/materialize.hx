@@ -7,10 +7,10 @@ typedef TabsOptions = {
 ?responsiveThreshold:Float
 }
 @:native("M.Tabs")
-extern class TabsComponent extends Component{
+extern class Tabs extends Component {
     public function new(el:Element, ?options:TabsOptions):Void;
-    public static function init(els:Dynamic, ?options:TabsOptions):Array<TabsComponent>;
-    public static function getInstance(el:Element):TabsComponent;
+	public static function init(els:Dynamic, ?options:TabsOptions):Array<Tabs>;
+	public static function getInstance(el:Element):Tabs;
     public function updateTabIndicator():Void;
     public function select(tabId:String):Void;
 

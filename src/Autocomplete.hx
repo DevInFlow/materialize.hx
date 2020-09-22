@@ -19,7 +19,7 @@ typedef AutocompleteOptions = {
 }
 
 @:native("M.Autocomplete")
-extern class AutocompleteComponent extends Component {
+extern class Autocomplete extends Component {
 	public var el:Element;
 	public var options:AutocompleteOptions;
 	public var isOpen:Bool;

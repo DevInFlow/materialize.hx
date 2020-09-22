@@ -2,23 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="433550bf-dfb0-4275-a5e6-e3c84e916739" name="Default" comment=".">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Params.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/componenets/ButtonTest.hx" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/collection/ButtonTest.hx" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/collection/BreadcrumbTest.hx" afterPath="$PROJECT_DIR$/src/test/componenets/BreadcrumbTest.hx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/collection/CardTest.hx" afterPath="$PROJECT_DIR$/src/test/componenets/CardTest.hx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/collection/CollectionTest.hx" afterPath="$PROJECT_DIR$/src/test/componenets/CollectionTest.hx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/collection/NavbarTest.hx" afterPath="$PROJECT_DIR$/src/test/componenets/NavbarTest.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/AnchorCollection.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/BrandLogo.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Breadcrumb.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/BreadcrumbContainer.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Button.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Card.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Checkbox.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Chips.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Col.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Container.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/DatePicker.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Form.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Header.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Icon.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/InputField.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/ListCollection.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Nav.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Radio.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Range.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Row.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Select.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Sidenav.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Switch.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Tabs.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/TextInput.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/TimePicker.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/base/BaseInputElement.hx" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/haxelib.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Autocomplete.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Buttons.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Carousel.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/CharacterCounter.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Chips.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Collapsible.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Component.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Datepicker.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Dropdown.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/FormSelect.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/M.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Materialbox.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Modal.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Parallax.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Pushpin.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/ScrollSpy.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Sidenav.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Slider.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Tabs.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Test.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Timepicker.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Toast.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/Tooltip.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/materialize.hx/0,0,1/src/js/jquery/Plugin.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/model/Components.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/model/Containers.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/model/Forms.hx" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Carousel.hx" afterPath="$PROJECT_DIR$/src/CarouselComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CharacterCounter.hx" afterPath="$PROJECT_DIR$/src/CharacterCounterComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Chips.hx" afterPath="$PROJECT_DIR$/src/ChipsComponenet.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Collapsible.hx" afterPath="$PROJECT_DIR$/src/CollapsibleComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Datepicker.hx" afterPath="$PROJECT_DIR$/src/DatePickerComponenet.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Dropdown.hx" afterPath="$PROJECT_DIR$/src/DropdownComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/FormSelect.hx" afterPath="$PROJECT_DIR$/src/FormSelectComponenet.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Materialbox.hx" afterPath="$PROJECT_DIR$/src/MaterialboxComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Modal.hx" afterPath="$PROJECT_DIR$/src/ModalComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Parallax.hx" afterPath="$PROJECT_DIR$/src/ParallaxComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pushpin.hx" afterPath="$PROJECT_DIR$/src/PushpinComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ScrollSpy.hx" afterPath="$PROJECT_DIR$/src/ScrollSpyComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Sidenav.hx" afterPath="$PROJECT_DIR$/src/SidenavComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Slider.hx" afterPath="$PROJECT_DIR$/src/SliderComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Tabs.hx" afterPath="$PROJECT_DIR$/src/TabsComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Timepicker.hx" afterPath="$PROJECT_DIR$/src/TimePickerComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Toast.hx" afterPath="$PROJECT_DIR$/src/ToastComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Tooltip.hx" afterPath="$PROJECT_DIR$/src/TooltipComponent.hx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/jquery/Plugin.hx" afterPath="$PROJECT_DIR$/src/model/jquery/Plugin.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/materialize.hx.zip" afterPath="$PROJECT_DIR$/build/materialize.hx.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.properties" afterPath="$PROJECT_DIR$/build.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Components.hx" afterPath="$PROJECT_DIR$/src/model/Components.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Containers.hx" afterPath="$PROJECT_DIR$/src/model/Containers.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/materialize.hx/.current" afterPath="$PROJECT_DIR$/build/materialize.hx/.current" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haxelib.json" afterPath="$PROJECT_DIR$/haxelib.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/materialize.hx.iml" afterPath="$PROJECT_DIR$/materialize.hx.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Buttons.hx" afterPath="$PROJECT_DIR$/src/Buttons.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Css.hx" afterPath="$PROJECT_DIR$/src/model/Css.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Params.hx" afterPath="$PROJECT_DIR$/src/model/Params.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/macro/Macro.hx" afterPath="$PROJECT_DIR$/src/model/macro/Macro.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Test.hx" afterPath="$PROJECT_DIR$/src/test/Test.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/base/BaseTest.hx" afterPath="$PROJECT_DIR$/src/test/base/BaseTest.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/test.js" afterPath="$PROJECT_DIR$/www/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/componenets/CardTest.hx" afterPath="$PROJECT_DIR$/src/test/componenets/CardTest.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/componenets/CollectionTest.hx" afterPath="$PROJECT_DIR$/src/test/componenets/CollectionTest.hx" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,13 +98,107 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="BreadcrumbTest.hx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/componenets/BreadcrumbTest.hx">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Macro.hx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/macro/Macro.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state relative-caret-position="15">
+              <caret line="149" column="55" lean-forward="false" selection-start-line="149" selection-start-column="55" selection-end-line="149" selection-end-column="55" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Css.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Css.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Plugin.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/jquery/Plugin.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="20" column="5" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="20" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MaterialboxComponent.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MaterialboxComponent.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Component.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Component.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SidenavComponent.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SidenavComponent.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sidenav.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Sidenav.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="20" />
+              <folding>
+                <element signature="e#15#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Switch.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Switch.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Container.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Container.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Button.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Button.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="16" column="71" lean-forward="false" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+              <folding>
+                <element signature="e#15#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,40 +217,41 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Object.prototype.hasOwnProperty.call(null</find>
-      <find>ne</find>
-      <find>params</find>
-      <find>new Icon</find>
-      <find>CardIm</find>
-      <find>CardImag</find>
-      <find>nCardImage</find>
-      <find>{src:</find>
+      <find>DatePicker</find>
+      <find>Time</find>
+      <find>validate</find>
       <find>C</find>
-      <find>Card</find>
-      <find>CardI</find>
-      <find>CardImage</find>
-      <find>new CardImage</find>
-      <find>content</find>
-      <find>construct</find>
+      <find>Compon</find>
+      <find>Componenets</find>
+      <find>\@\:native\(\&quot;M\.Timepicker\&quot;\)\nextern class Timepicker extends Component\{\n    public function new\(el\:Element\, \?options\:TimepickerOptions\)\:Void\;\n    public static function init\(els\:Dynamic\, \?options\:TimepickerOptions\)\:Array\&lt;Timepicker\&gt;\;\n    public static function getInstance\(el\:Element\)\:Timepicker\;\n    public function open\(\)\:Void\;\n    public function close\(\)\:Void\;\n    public function showView\(view\:String\)\:Void\;\n\n\n\}\n</find>
+      <find>model.Compone</find>
+      <find>model.Compo</find>
+      <find>model.Components</find>
+      <find>e</find>
+      <find>elect</find>
+      <find>Random</find>
+      <find>icon</find>
       <find>Icon_Im</find>
-      <find>html</find>
-      <find>setIcon</find>
-      <find>Raised</find>
-      <find>elements</find>
-      <find>lClass</find>
+      <find>si</find>
+      <find>side</find>
+      <find>sidena</find>
+      <find>sidenav</find>
+      <find>sidenav-</find>
+      <find>sidenav-c</find>
+      <find>sidenav-cl</find>
+      <find>sidenav-clo</find>
+      <find>sidenav-close</find>
+      <find>disabled</find>
+      <find>Select</find>
+      <find>new</find>
+      <find>Context.</find>
       <find>localClass</find>
-      <find>\n</find>
-      <find>a</find>
-      <find>ap</find>
-      <find>app</find>
-      <find>appe</find>
-      <find>appen</find>
-      <find>append</find>
-      <find>appendHtml</find>
+      <find>Expr</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
       <replace>params</replace>
+      <replace>model</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -102,57 +265,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Timepicker.hx" />
-        <option value="$PROJECT_DIR$/src/CharacterCounter.hx" />
-        <option value="$PROJECT_DIR$/src/FormSelect.hx" />
-        <option value="$PROJECT_DIR$/src/M.hx" />
-        <option value="$PROJECT_DIR$/src/js/jquery/Plugin.hx" />
-        <option value="$PROJECT_DIR$/src/Buttons.hx" />
-        <option value="$PROJECT_DIR$/src/components/Badge.hx" />
-        <option value="$PROJECT_DIR$/src/components/badges/BadgesDropdown.hx" />
-        <option value="$PROJECT_DIR$/src/components/badges/Collections.hx" />
-        <option value="$PROJECT_DIR$/src/model/Materialize.hx" />
-        <option value="$PROJECT_DIR$/src/components/base/BaseComponent.hx" />
-        <option value="$PROJECT_DIR$/src/components/base/BaseAnchorElement.hx" />
-        <option value="$PROJECT_DIR$/src/model/Classes.hx" />
-        <option value="$PROJECT_DIR$/src/components/events/Event.hx" />
-        <option value="$PROJECT_DIR$/src/components/Badges.hx" />
-        <option value="$PROJECT_DIR$/src/components/Floating.hx" />
-        <option value="$PROJECT_DIR$/www/css/materialize.css" />
-        <option value="$PROJECT_DIR$/src/components/Breadcrumb.hx" />
-        <option value="$PROJECT_DIR$/src/components/Buttons.hx" />
-        <option value="$PROJECT_DIR$/src/components/Cards.hx" />
-        <option value="$PROJECT_DIR$/src/components/Collections.hx" />
-        <option value="$PROJECT_DIR$/src/components/Icon.hx" />
-        <option value="$PROJECT_DIR$/build.hxml" />
-        <option value="$PROJECT_DIR$/../nouislilder.hx/src/NoUISlider.hx" />
-        <option value="$PROJECT_DIR$/../nouislilder.hx/src/noUISlider.hx" />
-        <option value="$PROJECT_DIR$/src/test/TestinputE.hx" />
-        <option value="$PROJECT_DIR$/src/model/Forms.hx" />
-        <option value="$PROJECT_DIR$/src/Test.hx" />
-        <option value="$PROJECT_DIR$/src/test/collection/Collection.hx" />
-        <option value="$PROJECT_DIR$/src/model/Collections.hx" />
         <option value="$PROJECT_DIR$/haxelib.json" />
-        <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/src/test/CollectionTest.hx" />
-        <option value="$PROJECT_DIR$/src/model/base/IIconHolder.hx" />
-        <option value="$PROJECT_DIR$/src/model/base/BaseButton.hx" />
-        <option value="$PROJECT_DIR$/src/model/Css.hx" />
-        <option value="$PROJECT_DIR$/src/model/Containers.hx" />
-        <option value="$PROJECT_DIR$/src/test/base/BaseTest.hx" />
-        <option value="$PROJECT_DIR$/src/test/collection/NavbarTest.hx" />
-        <option value="$PROJECT_DIR$/src/test/collection/BreadcrumbTest.hx" />
-        <option value="$PROJECT_DIR$/src/test/Test.hx" />
+        <option value="$PROJECT_DIR$/src/ChipsComponenet.hx" />
+        <option value="$PROJECT_DIR$/src/model/Core.hx" />
+        <option value="$PROJECT_DIR$/src/model/base/BaseInputElement.hx" />
+        <option value="$PROJECT_DIR$/src/model/TimePicker.hx" />
+        <option value="$PROJECT_DIR$/src/model/DatePicker.hx" />
+        <option value="$PROJECT_DIR$/src/Datepicker.hx" />
+        <option value="$PROJECT_DIR$/src/DatePickerComponenet.hx" />
+        <option value="$PROJECT_DIR$/src/model/InputField.hx" />
+        <option value="$PROJECT_DIR$/src/model/Switch.hx" />
+        <option value="$PROJECT_DIR$/src/FormSelectComponenet.hx" />
+        <option value="$PROJECT_DIR$/src/model/Range.hx" />
+        <option value="$PROJECT_DIR$/src/Radio.hx" />
+        <option value="$PROJECT_DIR$/src/model/Form.hx" />
+        <option value="$PROJECT_DIR$/src/model/TextInput.hx" />
+        <option value="$PROJECT_DIR$/src/model/Forms.hx" />
+        <option value="$PROJECT_DIR$/src/model/Checkbox.hx" />
+        <option value="$PROJECT_DIR$/src/Buttons.hx" />
+        <option value="$PROJECT_DIR$/src/model/Plugin.hx" />
+        <option value="$PROJECT_DIR$/src/model/AnchorCollection.hx" />
+        <option value="$PROJECT_DIR$/src/model/BrandLogo.hx" />
+        <option value="$PROJECT_DIR$/src/model/Breadcrumb.hx" />
+        <option value="$PROJECT_DIR$/src/model/BreadcrumbContainer.hx" />
+        <option value="$PROJECT_DIR$/src/Card.hx" />
+        <option value="$PROJECT_DIR$/src/model/Col.hx" />
+        <option value="$PROJECT_DIR$/src/model/Header.hx" />
+        <option value="$PROJECT_DIR$/src/model/Icon.hx" />
+        <option value="$PROJECT_DIR$/src/model/ListCollection.hx" />
+        <option value="$PROJECT_DIR$/src/model/Nav.hx" />
+        <option value="$PROJECT_DIR$/src/model/Tabs.hx" />
         <option value="$PROJECT_DIR$/src/model/Components.hx" />
-        <option value="$PROJECT_DIR$/src/test/collection/CollectionTest.hx" />
-        <option value="$PROJECT_DIR$/www/test.js" />
-        <option value="$PROJECT_DIR$/src/test/collection/ButtonTest.hx" />
+        <option value="$PROJECT_DIR$/src/model/Row.hx" />
+        <option value="$PROJECT_DIR$/src/test/componenets/CardTest.hx" />
+        <option value="$PROJECT_DIR$/build/materialize.hx/0,0,2/src/test/base/BaseTest.hx" />
+        <option value="$PROJECT_DIR$/src/model/Card.hx" />
+        <option value="$PROJECT_DIR$/src/CarouselComponenet.hx" />
+        <option value="$PROJECT_DIR$/src/CarouselComponent.hx" />
+        <option value="$PROJECT_DIR$/src/CollapsibleComponent.hx" />
+        <option value="$PROJECT_DIR$/src/MaterialboxComponent.hx" />
+        <option value="$PROJECT_DIR$/src/ModalComponent.hx" />
+        <option value="$PROJECT_DIR$/src/model/jquery/Plugin.hx" />
+        <option value="$PROJECT_DIR$/src/Select.hx" />
+        <option value="$PROJECT_DIR$/src/model/Select.hx" />
+        <option value="$PROJECT_DIR$/src/model/Radio.hx" />
+        <option value="$PROJECT_DIR$/src/model/Chips.hx" />
+        <option value="$PROJECT_DIR$/src/model/Container.hx" />
+        <option value="$PROJECT_DIR$/src/model/Button.hx" />
+        <option value="$PROJECT_DIR$/src/model/Sidenav.hx" />
         <option value="$PROJECT_DIR$/src/model/Params.hx" />
         <option value="$PROJECT_DIR$/src/model/macro/Macro.hx" />
-        <option value="$PROJECT_DIR$/src/test/collection/CardTest.hx" />
-        <option value="$PROJECT_DIR$/build.properties" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/test/componenets/BreadcrumbTest.hx" />
+        <option value="$PROJECT_DIR$/src/model/Css.hx" />
       </list>
     </option>
   </component>
@@ -188,6 +351,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -228,7 +392,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="MaterialboxComponent.hx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materialize.hx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materialize.hx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,11 +428,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="componenets" />
+              <option name="myItemId" value="macro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materialize.hx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materialize.hx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -258,7 +462,6 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,6 +648,18 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
@@ -849,7 +1064,24 @@
       <workItem from="1543826417097" duration="400000" />
       <workItem from="1543998240594" duration="15731000" />
       <workItem from="1544110297600" duration="283000" />
-      <workItem from="1544167557741" duration="14525000" />
+      <workItem from="1544167557741" duration="14800000" />
+      <workItem from="1544208097630" duration="616000" />
+      <workItem from="1544370502029" duration="1483000" />
+      <workItem from="1544453352353" duration="4562000" />
+      <workItem from="1544503244718" duration="17667000" />
+      <workItem from="1544599381552" duration="15785000" />
+      <workItem from="1544683323375" duration="5563000" />
+      <workItem from="1544720273545" duration="750000" />
+      <workItem from="1544772860359" duration="489000" />
+      <workItem from="1544774357738" duration="24000" />
+      <workItem from="1544859662044" duration="3165000" />
+      <workItem from="1544962117390" duration="999000" />
+      <workItem from="1545060261141" duration="9000" />
+      <workItem from="1545060347142" duration="975000" />
+      <workItem from="1546358933228" duration="637000" />
+      <workItem from="1548141701581" duration="3365000" />
+      <workItem from="1548183993964" duration="2164000" />
+      <workItem from="1548276143084" duration="380000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1543500184719</created>
@@ -862,42 +1094,42 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121243000" />
+    <option name="totallyTimeSpent" value="180151000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.75186366" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19595315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="1372" y="23" width="529" height="1045" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37648222" sideWeight="0.37806177" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905138" sideWeight="0.79286474" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="1372" y="23" width="529" height="1045" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905138" sideWeight="0.20713525" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37648222" sideWeight="0.37806177" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.24813631" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -916,17 +1148,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3992095" sideWeight="0.48509052" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37648222" sideWeight="0.37806177" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3992095" sideWeight="0.5149095" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27103302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905138" sideWeight="0.4914803" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30237153" sideWeight="0.7504039" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17571884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="1372" y="23" width="529" height="1045" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32845187" sideWeight="0.24959612" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -942,81 +1175,141 @@
     <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/jquery/Plugin.hx">
+    <entry file="file://$PROJECT_DIR$/src/model/BreadcrumbContainer.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="48" column="45" lean-forward="false" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/materialize.min.css" />
-    <entry file="file://$PROJECT_DIR$/www/css/materialize.css" />
-    <entry file="file:///usr/local/lib/haxe/std/js/html/DOMElement.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="46" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Breadcrumb.hx" />
-    <entry file="file://$PROJECT_DIR$/src/components/Buttons.hx" />
-    <entry file="file://$PROJECT_DIR$/src/components/Cards.hx" />
-    <entry file="file://$PROJECT_DIR$/src/components/Collections.hx" />
-    <entry file="file://$PROJECT_DIR$/src/components/events/Event.hx" />
-    <entry file="file://$PROJECT_DIR$/src/components/Icon.hx" />
-    <entry file="file:///usr/local/lib/haxe/std/js/html/InputElement.hx">
+    <entry file="file://$PROJECT_DIR$/src/model/Header.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../nouislilder.hx/src/NoUiSlider.hx">
+    <entry file="file://$PROJECT_DIR$/src/model/Components.hx" />
+    <entry file="file://$PROJECT_DIR$/src/test/componenets/CardTest.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        <state relative-caret-position="195">
+          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestinputE.hx" />
-    <entry file="file://$PROJECT_DIR$/src/model/Collections.hx" />
-    <entry file="file://$PROJECT_DIR$/src/model/Forms.hx">
+    <entry file="file://$PROJECT_DIR$/build/materialize.hx/0,0,2/src/test/base/BaseTest.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="167" column="18" lean-forward="false" selection-start-line="167" selection-start-column="18" selection-end-line="167" selection-end-column="18" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haxelib.json">
+    <entry file="file://$PROJECT_DIR$/src/model/ListCollection.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="210">
+          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#15#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
+    <entry file="file://$PROJECT_DIR$/src/model/Nav.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../nouislilder.hx/src/Direction.hx">
+    <entry file="file://$PROJECT_DIR$/src/model/Tabs.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#43#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Buttons.hx">
+    <entry file="file://$PROJECT_DIR$/src/model/Row.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Breadcrumb.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/InputField.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Col.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Checkbox.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/BrandLogo.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/TimePicker.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Card.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/TextInput.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1025,256 +1318,260 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Select.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.hxml">
+    <entry file="file://$PROJECT_DIR$/build/materialize.hx/0,0,2/src/model/Forms.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="329">
+          <caret line="109" column="9" lean-forward="false" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/base/IIconHolder.hx" />
-    <entry file="file://$PROJECT_DIR$/src/model/base/BaseButton.hx" />
-    <entry file="file:///usr/local/lib/haxe/std/js/html/DOMTokenList.hx">
+    <entry file="file://$PROJECT_DIR$/src/model/Form.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="27" lean-forward="false" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="51" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/haxe/std/haxe/macro/ExprTools.hx">
+    <entry file="file://$PROJECT_DIR$/src/Buttons.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="232" column="4" lean-forward="false" selection-start-line="232" selection-start-column="4" selection-end-line="232" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/haxe/std/Type.hx">
+    <entry file="file://$PROJECT_DIR$/src/CarouselComponent.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/haxe/std/haxe/extern/EitherType.hx">
+    <entry file="file://$PROJECT_DIR$/src/CharacterCounterComponent.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/haxe/std/haxe/macro/TypeTools.hx">
+    <entry file="file://$PROJECT_DIR$/src/ChipsComponenet.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1636">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/haxe/std/Array.hx">
+    <entry file="file://$PROJECT_DIR$/src/CollapsibleComponent.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="90" column="4" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="30">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+    <entry file="file://$PROJECT_DIR$/src/DatePickerComponenet.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+        <state relative-caret-position="615">
+          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/haxe/std/js/html/HTMLDocument.hx">
+    <entry file="file://$PROJECT_DIR$/src/DropdownComponent.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="132" column="74" lean-forward="false" selection-start-line="132" selection-start-column="74" selection-end-line="132" selection-end-column="74" />
-          <folding />
+        <state relative-caret-position="45">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/haxe/std/js/html/Document.hx">
+    <entry file="file://$PROJECT_DIR$/src/FormSelectComponenet.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="325" column="4" lean-forward="false" selection-start-line="325" selection-start-column="4" selection-end-line="325" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="105">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Containers.hx">
+    <entry file="file://$PROJECT_DIR$/src/ModalComponent.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#32#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/componenets/CollectionTest.hx">
+    <entry file="file://$PROJECT_DIR$/src/ParallaxComponent.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-          <folding>
-            <element signature="e#26#44#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/haxe/std/haxe/macro/Context.hx">
+    <entry file="file://$PROJECT_DIR$/src/PushpinComponent.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="462" column="41" lean-forward="false" selection-start-line="462" selection-start-column="27" selection-end-line="462" selection-end-column="41" />
-          <folding />
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Test.hx">
+    <entry file="file://$PROJECT_DIR$/src/SliderComponent.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#47#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/componenets/NavbarTest.hx">
+    <entry file="file://$PROJECT_DIR$/src/TabsComponent.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TimePickerComponent.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ToastComponent.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TooltipComponent.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/base/BaseTest.hx">
+    <entry file="file://$PROJECT_DIR$/src/model/Radio.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/test.js">
+    <entry file="file://$PROJECT_DIR$/src/model/Icon.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="2198" column="29" lean-forward="false" selection-start-line="2198" selection-start-column="29" selection-end-line="2198" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Css.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="370" column="58" lean-forward="true" selection-start-line="370" selection-start-column="58" selection-end-line="370" selection-end-column="58" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#3539#3673#0" expanded="false" />
-            <element signature="e#3738#3765#0" expanded="false" />
-            <element signature="e#3831#3934#0" expanded="false" />
-            <element signature="e#3995#4145#0" expanded="false" />
+            <element signature="e#15#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/componenets/ButtonTest.hx">
+    <entry file="file://$PROJECT_DIR$/src/model/Chips.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#26#60#0" expanded="true" />
+            <element signature="e#15#51#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Components.hx">
+    <entry file="file://$PROJECT_DIR$/src/model/Container.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Button.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="71" lean-forward="false" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
           <folding>
-            <element signature="e#16#38#0" expanded="true" />
+            <element signature="e#15#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/haxe/std/haxe/macro/Expr.hx">
+    <entry file="file://$PROJECT_DIR$/src/model/Switch.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="502" column="0" lean-forward="false" selection-start-line="502" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/componenets/CardTest.hx">
+    <entry file="file://$PROJECT_DIR$/src/SidenavComponent.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/model/Sidenav.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/macro/Macro.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="164" column="38" lean-forward="true" selection-start-line="164" selection-start-column="38" selection-end-line="164" selection-end-column="38" />
+        <state relative-caret-position="120">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="20" />
           <folding>
-            <element signature="e#21#49#0" expanded="true" />
+            <element signature="e#15#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Params.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="540">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/haxe/std/js/jquery/JQuery.hx">
+    <entry file="file://$PROJECT_DIR$/src/model/Css.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="995" column="4" lean-forward="false" selection-start-line="995" selection-start-column="4" selection-end-line="995" selection-end-column="4" />
+        <state relative-caret-position="390">
+          <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/componenets/BreadcrumbTest.hx">
+    <entry file="file://$PROJECT_DIR$/src/model/jquery/Plugin.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        <state relative-caret-position="75">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MaterialboxComponent.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/macro/Macro.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="149" column="55" lean-forward="false" selection-start-line="149" selection-start-column="55" selection-end-line="149" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1308,7 +1605,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>noUiSlider</last-edited>
+          <last-edited>gotocore-hx</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

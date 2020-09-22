@@ -1,5 +1,5 @@
 -cp src
 -main test.Test
--lib random
+# -lib random
 -lib nouislider.hx
 -js www/test.js

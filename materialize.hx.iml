@@ -12,5 +12,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Random" level="application" />
     <orderEntry type="library" name="noUiSlider" level="application" />
+    <orderEntry type="library" name="gotocore-hx" level="application" />
   </component>
 </module>

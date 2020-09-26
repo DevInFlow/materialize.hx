@@ -15,6 +15,8 @@ typedef ChipsOptions = {
 }
 @:native("M.Chips")
 extern class Chips extends Component {
+	public var chipsData:Array<Dynamic>;
+	public var autocomplete:Null<Autocomplete>;
     public function new(el:Element, ?options:ChipsOptions):Void;
     public function addChip(chip:{tag:String, ?image:Dynamic}):Void;
     public function selectChip(index:Int):Void;
